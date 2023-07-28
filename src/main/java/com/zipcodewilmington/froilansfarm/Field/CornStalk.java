@@ -9,7 +9,7 @@ public class CornStalk {
     public void CornStalk ( ) {
 
     }
-    public CornClass yeild() {
+    public CornClass yield() {
         return null;
     }
     public boolean hasYieldCheck(int yeild){
