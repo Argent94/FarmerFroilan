@@ -33,5 +33,20 @@ public class PersonClassTest {
         Assert.assertEquals(expected, actual);
     }
 
+    @Test
+    public void eatCornTest(){
+        // Given
+        Person person = new Person();
+        Map<Edible, int>
+
+
+        // When
+        person.setName("Alex");
+        String actual = person.getName();
+
+        // Then
+        Assert.assertEquals(expected, actual);
+    }
+
 
 }
