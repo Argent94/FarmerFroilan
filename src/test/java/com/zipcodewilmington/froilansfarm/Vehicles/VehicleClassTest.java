@@ -6,16 +6,24 @@ import static org.junit.jupiter.api.Assertions.*;
 public class VehicleClassTest {
 
     @Test
-    public void makeNoise(){}
+    public void makeNoise(){
+
+    }
 
     @Test
-    public void addRider(){}
+    public void addRider(){
+
+    }
 
     @Test
-    public void removeRider(){}
+    public void removeRider(){
+
+    }
 
     @Test
-    public void hasRiderCheck(){}
+    public void hasRiderCheck(){
+
+    }
 
 
 }
