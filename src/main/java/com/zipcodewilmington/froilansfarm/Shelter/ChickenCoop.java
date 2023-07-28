@@ -1,4 +1,4 @@
 package com.zipcodewilmington.froilansfarm.Shelter;
 
-public class FarmHouseClass {
+public class ChickenCoop {
 }
