@@ -1,4 +1,4 @@
 package com.zipcodewilmington.froilansfarm.Field;
 
-public class FarmClass {
+public class Crop {
 }
