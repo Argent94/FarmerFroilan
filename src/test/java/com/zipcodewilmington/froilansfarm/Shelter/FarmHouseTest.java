@@ -59,7 +59,7 @@ class FarmHouseTest {
         farmHouse.addAnimal(person);
         farmHouse.addAnimal(person1);
         //When
-        Person expected = person("",0);
+        Person expected = person;
         Person actual = farmHouse.getAnimal(person);
         //Than
         Assert.assertEquals(expected,actual);

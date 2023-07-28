@@ -2,5 +2,5 @@ package com.zipcodewilmington.froilansfarm.Shelter;
 
 import com.zipcodewilmington.froilansfarm.Animals.Animal;
 
-public interface Shelter  {
+public abstract class Shelter <AnimalType extends Animal> {
 }

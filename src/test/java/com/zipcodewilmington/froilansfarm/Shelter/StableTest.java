@@ -75,8 +75,9 @@ class StableTest {
         stable.addAnimal(house1);
         //When
         Integer expected = 1;
-        Integer actual = stable.checkOutHorse();
-        //Then
+        stable.checkOutHorse();
+        Integer actual = stable.getSize();
+                //Then
         Assert.assertEquals(expected,actual);
 
     }
@@ -90,7 +91,9 @@ class StableTest {
         stable.addAnimal(horse);
         //When
         Integer expected = 2;
-        Integer actual = stable.checkInHorse();
+        stable.checkInHorse(house1);
+
+        Integer actual = stable.getSize();
         //Then
         Assert.assertEquals(expected,actual);
     }
