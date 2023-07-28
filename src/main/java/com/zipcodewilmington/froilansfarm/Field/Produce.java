@@ -1,4 +1,5 @@
 package com.zipcodewilmington.froilansfarm.Field;
 
-public class FieldClass {
+public interface Produce {
+    void yield();
 }
