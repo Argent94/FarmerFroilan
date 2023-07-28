@@ -83,15 +83,14 @@ class StableTest {
     }
     @Test
     void testCheckInHorse() {
-        Horse ridingHorse = null;
 
         Stable stable = new Stable();
         Horse horse = new Horse();
-        Horse house1 = new Horse();
+        Horse horse1 = new Horse();
         stable.addAnimal(horse);
         //When
         Integer expected = 2;
-        stable.checkInHorse(house1);
+        stable.checkInHorse(horse1);
 
         Integer actual = stable.getSize();
         //Then
@@ -116,7 +115,8 @@ class StableTest {
     }
 
     @Test
-    public void testSetRiddingHorse () {
+    public void testSetRidingHorse () {
+
         //Given
         Stable stable = new Stable();
         Horse horse = new Horse();
@@ -124,13 +124,29 @@ class StableTest {
         stable.addAnimal(horse);
         stable.addAnimal(house1);
         //When
+        stable.setRidingHorse(horse);
+        Horse expected = horse;
 
+        Horse actual = stable.getRidingHorse();
+        Assert.assertEquals(expected,actual);
 
     }
 
 
     @Test
     public void testGetRiddingHors () {
+        //Given
+        Stable stable = new Stable();
+        Horse horse = new Horse();
+
+        stable.addAnimal(horse);
+        //When
+        stable.setRidingHorse(horse);
+        Horse expected = horse;
+
+        Horse actual = stable.getRidingHorse();
+        Assert.assertEquals(expected,actual);
 
     }
+
 }
