@@ -1,4 +1,4 @@
 package com.zipcodewilmington.froilansfarm.Edible;
 
-public class Corn {
+public class Corn extends Edible{
 }
