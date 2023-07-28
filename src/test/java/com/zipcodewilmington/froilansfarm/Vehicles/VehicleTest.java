@@ -1,13 +1,12 @@
 package com.zipcodewilmington.froilansfarm.Vehicles;
-import org.junit.Test;
 import org.junit.Assert;
+import org.junit.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-public class VehicleClassTest {
+public class VehicleTest {
 
     @Test
     public void makeNoise(){
-
+        Vehicle vehicle = new Vehicle();
     }
 
     @Test
@@ -21,9 +20,8 @@ public class VehicleClassTest {
     }
 
     @Test
-    public void hasRiderCheck(){
+    public void hasRiderCheck(){}
 
-    }
 
 
 }

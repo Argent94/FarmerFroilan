@@ -1,4 +1,6 @@
 package com.zipcodewilmington.froilansfarm.Vehicles;
 
-public interface FarmVehicleInterface {
+public class Vehicle {
+     public void makeNoise() {}
+
 }

@@ -1,16 +1,15 @@
 package com.zipcodewilmington.froilansfarm.Vehicles;
 import org.junit.Test;
-import org.junit.Assert;
 
+class TractorClassTest {
 
-public class CropDusterClassTest {
     @Test
-    public void fly(){
+    public void tractor(){
 
     }
 
     @Test
-    public void fertilze(){
+    public void harvest(){
 
     }
 
