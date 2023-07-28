@@ -3,8 +3,8 @@ package com.zipcodewilmington.froilansfarm.Field;
 import com.zipcodewilmington.froilansfarm.Edible.EdibleClass;
 
 public class Crop {
-    int yield;
-    boolean readyToHarvest;
+    private int yield;
+    private boolean readyToHarvest;
 
     public void Crop(){
 
