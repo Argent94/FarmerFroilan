@@ -1,4 +1,4 @@
 package com.zipcodewilmington.froilansfarm;
 
-public interface NoiseMakerInterface {
+public interface Ridable {
 }
