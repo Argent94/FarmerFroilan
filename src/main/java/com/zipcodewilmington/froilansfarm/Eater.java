@@ -1,4 +1,8 @@
 package com.zipcodewilmington.froilansfarm;
 
-public interface Eater {
+
+import com.zipcodewilmington.froilansfarm.Edible.Edible;
+
+public interface Eater<EdibleType extends Edible> {
+
 }
