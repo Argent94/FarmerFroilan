@@ -15,5 +15,4 @@ public class Stable {
         horses.add(horse);
     }
 
-
 }
