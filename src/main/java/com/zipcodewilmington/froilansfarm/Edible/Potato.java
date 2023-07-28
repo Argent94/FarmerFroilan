@@ -1,4 +1,4 @@
 package com.zipcodewilmington.froilansfarm.Edible;
 
-public class EggClass {
+public class Potato {
 }

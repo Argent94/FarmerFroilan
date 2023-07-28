@@ -1,4 +1,4 @@
 package com.zipcodewilmington.froilansfarm.Animals;
 
-public class AnimalClass {
+public class Horse {
 }
