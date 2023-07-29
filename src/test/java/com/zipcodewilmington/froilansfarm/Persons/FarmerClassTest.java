@@ -1,4 +1,184 @@
 package com.zipcodewilmington.froilansfarm.Persons;
+import com.zipcodewilmington.froilansfarm.Animals.Animal;
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.util.HashMap;
+import java.util.Map;
+
 import static org.junit.jupiter.api.Assertions.*;
 public class FarmerClassTest {
+
+    @Test
+    public void getNameTest(){
+        // Given
+        Farmer farmer = new Farmer();
+        String expected = "";
+
+        // When
+        String actual = farmer.getName();
+
+        // Then
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void setNameTest(){
+        // Given
+        Farmer farmer = new Farmer();
+        String expected = "Old MacDonald";
+
+
+        // When
+        farmer.setName("Old MacDonald");
+        String actual = farmer.getName();
+
+        // Then
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void eatCornTest(){
+        // Given
+        Farmer farmer = new Farmer();
+
+        // When
+
+        // Then
+
+
+    }
+
+    @Test
+    public void mountTest(){
+        // Given
+        Farmer farmer = new Farmer();
+        Boolean expected = true;
+
+        // When
+        farmer.mount();
+        Boolean actual = farmer.isRidingCheck();
+
+        // Then
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void dismountTest(){
+        // Given
+        Farmer farmer = new Farmer();
+        Boolean expected = false;
+
+        // When
+        farmer.mount();
+        Boolean actual = farmer.isRidingCheck();
+        Assert.assertTrue(actual);
+
+        farmer.dismount();
+        actual = farmer.isRidingCheck();
+
+        // Then
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void makeNoiseTest(){
+        // Given
+        Farmer farmer = new Farmer();
+        String expected = "Hello";
+
+        // When
+        String actual = farmer.makeNoise();
+
+        // Then
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void getFoodEatenTest(){
+        // Given
+        Farmer farmer = new Farmer();
+        Map<String, Integer> expected = new HashMap<String, Integer>();
+        expected.put("Corn", 3);
+
+        // When
+        farmer.eat("Corn", 3);
+        Map<String, Integer> actual = farmer.getFoodEaten();
+
+        // Then
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void getBeenFedTest(){
+        // Given
+        Farmer farmer = new Farmer();
+        Boolean expected = false;
+
+        // When
+        Boolean actual = farmer.getBeenFed();
+
+        // Then
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void setBeenFedTest(){
+        // Given
+        Farmer farmer = new Farmer();
+        Boolean expected = true;
+
+        // When
+        farmer.setBeenFed(true);
+        Boolean actual = farmer.getBeenFed();
+
+        // Then
+        Assert.assertEquals(expected, actual);
+
+    }
+
+    @Test
+    public void getIsRidingTest(){
+        // Given
+        Farmer farmer = new Farmer();
+        Boolean expected = false;
+
+        // When
+        Boolean actual = farmer.getIsRiding();
+
+        // Then
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void setIsRidingTest(){
+        // Given
+        Farmer farmer = new Farmer();
+        Boolean expected = true;
+
+        // When
+        farmer.setIsRiding(true);
+        Boolean actual = farmer.getIsRiding();
+
+        // Then
+        Assert.assertEquals(expected, actual);
+
+    }
+
+
+
+    @Test
+    public void personIsInstanceOfAnimalTest(){
+        // Given
+        Farmer farmer = new Farmer();
+        Boolean expected = true;
+
+        // When
+        Boolean actual = farmer instanceof Person;
+
+        // Then
+        Assert.assertEquals(expected, actual);
+
+    }
+
 }

@@ -1,8 +1,8 @@
 package com.zipcodewilmington.froilansfarm.Field;
 
 public class Field {
-    CropRow [] cropRows;
-    int plantedRows;
+    private CropRow [] cropRows;
+    private int plantedRows;
     public void Field(){
 
     }
