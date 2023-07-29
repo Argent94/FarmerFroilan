@@ -1,4 +1,6 @@
 package com.zipcodewilmington.froilansfarm.Persons;
 
-public class Pilot {
+import com.zipcodewilmington.froilansfarm.Rider;
+
+public class Pilot extends Person implements Rider {
 }

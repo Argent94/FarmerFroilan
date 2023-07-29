@@ -41,6 +41,12 @@ public class PersonClassTest {
     @Test
     public void eatCornTest(){
         // Given
+        Person person = new Person();
+
+        // When
+
+        // Then
+
 
     }
 
@@ -105,30 +111,62 @@ public class PersonClassTest {
     }
 
     @Test
-    public void beenFedCheckTest(){
+    public void getBeenFedTest(){
         // Given
         Person person = new Person();
-
+        Boolean expected = false;
 
         // When
-
+        Boolean actual = person.getBeenFed();
 
         // Then
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void setBeenFedTest(){
+        // Given
+        Person person = new Person();
+        Boolean expected = true;
+
+        // When
+        person.setBeenFed(true);
+        Boolean actual = person.getBeenFed();
+
+        // Then
+        Assert.assertEquals(expected, actual);
 
     }
 
     @Test
-    public void resetBeenFedTest(){
+    public void getIsRidingTest(){
         // Given
-
-
+        Person person = new Person();
+        Boolean expected = false;
 
         // When
-
+        Boolean actual = person.getIsRiding();
 
         // Then
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void setIsRidingTest(){
+        // Given
+        Person person = new Person();
+        Boolean expected = true;
+
+        // When
+        person.setIsRiding(true);
+        Boolean actual = person.getIsRiding();
+
+        // Then
+        Assert.assertEquals(expected, actual);
 
     }
+
+
 
     @Test
     public void personIsInstanceOfAnimalTest(){
