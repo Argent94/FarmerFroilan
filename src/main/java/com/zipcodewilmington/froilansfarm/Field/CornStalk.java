@@ -1,7 +1,7 @@
 package com.zipcodewilmington.froilansfarm.Field;
 
-import com.zipcodewilmington.froilansfarm.Edible.CornClass;
-import com.zipcodewilmington.froilansfarm.Edible.TomatoClass;
+import com.zipcodewilmington.froilansfarm.Edible.Corn;
+import com.zipcodewilmington.froilansfarm.Edible.Tomato;
 
 public class CornStalk {
 
@@ -9,7 +9,7 @@ public class CornStalk {
     public void CornStalk ( ) {
 
     }
-    public CornClass yield() {
+    public Corn yield() {
         return null;
     }
     public boolean hasYieldCheck(int yeild){
