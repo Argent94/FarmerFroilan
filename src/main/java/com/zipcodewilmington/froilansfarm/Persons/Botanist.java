@@ -1,4 +1,4 @@
 package com.zipcodewilmington.froilansfarm.Persons;
 
-public interface BotanistInterface {
+public interface Botanist {
 }
