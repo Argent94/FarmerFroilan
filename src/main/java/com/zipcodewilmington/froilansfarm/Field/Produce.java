@@ -1,5 +1,5 @@
 package com.zipcodewilmington.froilansfarm.Field;
 
-public interface Produce {
+public interface Produce<E> {
     void yield();
 }

@@ -81,6 +81,19 @@ class FarmHouseTest {
     }
 
 
+    @Test
+    public void testCheckInstance() {
+        //Given
+        FarmHouse farmHouse = new FarmHouse();
+        Boolean expected  = true;
+        //When
+        Boolean actual = farmHouse instanceof Shelter;
+        //Then
+        Assert.assertEquals(expected,actual);
+    }
+
+
+
 
 
 

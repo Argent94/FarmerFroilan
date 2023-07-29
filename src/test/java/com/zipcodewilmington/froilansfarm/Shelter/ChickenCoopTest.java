@@ -14,8 +14,10 @@ import static org.junit.jupiter.api.Assertions.*;
 class ChickenCoopTest {
 
     private List<Chicken> chickens;
+
     @Before
-    public void setUp() {chickens = new ArrayList<>();
+    public void setUp() {
+        chickens = new ArrayList<>();
     }
 
     @Test
@@ -32,8 +34,9 @@ class ChickenCoopTest {
         //Then
         Assert.assertEquals(expected, actual);
     }
+
     @Test
-    public void testGetSize () {
+    public void testGetSize() {
         //Given
         ChickenCoop chickenCoop = new ChickenCoop();
         Chicken chicken = new Chicken();
@@ -46,6 +49,7 @@ class ChickenCoopTest {
         //Then
         Assert.assertEquals(expected, actual);
     }
+
     @Test
     public void testClear() {
         //Given
@@ -62,6 +66,16 @@ class ChickenCoopTest {
     }
 
 
+    @Test
+    public void testCheckInstance() {
+        //Given
+        ChickenCoop chickenCoop = new ChickenCoop();
+        Boolean expected  = true;
+        //When
+        Boolean actual = chickenCoop instanceof Shelter;
+         //Then
+        Assert.assertEquals(expected,actual);
+    }
 
 
 }

@@ -100,13 +100,40 @@ public class PersonClassTest {
     public void getFoodEatenTest(){
         // Given
         Person person = new Person();
+        Map<Edible, Integer> expected = new HashMap<Edible, Integer>();
+        expected.put(Corn, 3);
+
+        // When
+        person.eat(3, Corn);
+
+        // Then
+
+    }
+
+    @Test
+    public void beenFedCheckTest(){
+        // Given
+
 
 
         // When
-        String actual = person.makeNoise();
+
 
         // Then
-        Assert.assertEquals(expected, actual);
+
+    }
+
+    @Test
+    public void resetBeenFedTest(){
+        // Given
+
+
+
+        // When
+
+
+        // Then
+
     }
 
 }

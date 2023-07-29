@@ -1,4 +1,6 @@
 package com.zipcodewilmington.froilansfarm.Shelter;
 
-public class ChickenCoop {
+import com.zipcodewilmington.froilansfarm.Animals.Chicken;
+
+public class ChickenCoop extends Shelter<Chicken> {
 }

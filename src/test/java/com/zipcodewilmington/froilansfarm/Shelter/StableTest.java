@@ -149,4 +149,16 @@ class StableTest {
 
     }
 
+    @Test
+    public void testCheckInstance() {
+        //Given
+         Stable stable = new Stable();
+        Boolean expected  = true;
+        //When
+        Boolean actual = stable instanceof Shelter;
+        //Then
+        Assert.assertEquals(expected,actual);
+    }
+
+
 }

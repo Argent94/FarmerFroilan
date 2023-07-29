@@ -5,7 +5,7 @@ import com.zipcodewilmington.froilansfarm.Animals.Horse;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Stable {
+public class Stable extends Shelter<Horse> {
     private List<Horse> horses;
 
     public Stable(){
