@@ -66,7 +66,7 @@ class FarmHouseTest {
     }
 
     @Test
-    public void testGetAnimal() {
+    public void testGetAnimal1() {
         //Given
         FarmHouse farmHouse = new FarmHouse();
         Person person = new Person();
