@@ -1,4 +1,5 @@
 package com.zipcodewilmington.froilansfarm.Persons;
+import com.zipcodewilmington.froilansfarm.Animals.Animal;
 import com.zipcodewilmington.froilansfarm.Edible.Edible;
 import org.junit.Assert;
 import org.junit.Test;
@@ -6,7 +7,7 @@ import org.junit.Test;
 import java.util.HashMap;
 import java.util.Map;
 
-import static org.junit.jupiter.api.Assertions.*;
+//import static org.junit.jupiter.api.Assertions.*;
 public class PersonClassTest {
 
     @Test
@@ -40,15 +41,7 @@ public class PersonClassTest {
     @Test
     public void eatCornTest(){
         // Given
-        Person person = new Person();
-        Map<Edible, Integer> expected = ;;
 
-        // When
-        foodEaten = person.getFoodEaten();
-
-
-        // Then
-        Assert.assertEquals(expected, actual);
     }
 
     @Test
@@ -100,20 +93,21 @@ public class PersonClassTest {
     public void getFoodEatenTest(){
         // Given
         Person person = new Person();
-        Map<Edible, Integer> expected = new HashMap<Edible, Integer>();
-        expected.put(Corn, 3);
+        Map<String, Integer> expected = new HashMap<String, Integer>();
+        expected.put("Corn", 3);
 
         // When
-        person.eat(3, Corn);
+        person.eat("Corn", 3);
+        Map<String, Integer> actual = person.getFoodEaten();
 
         // Then
-
+        Assert.assertEquals(expected, actual);
     }
 
     @Test
     public void beenFedCheckTest(){
         // Given
-
+        Person person = new Person();
 
 
         // When
@@ -133,6 +127,20 @@ public class PersonClassTest {
 
 
         // Then
+
+    }
+
+    @Test
+    public void personIsInstanceOfAnimalTest(){
+        // Given
+        Person person = new Person();
+        Boolean expected = true;
+
+        // When
+        Boolean actual = person instanceof Animal;
+
+        // Then
+        Assert.assertEquals(expected, actual);
 
     }
 
