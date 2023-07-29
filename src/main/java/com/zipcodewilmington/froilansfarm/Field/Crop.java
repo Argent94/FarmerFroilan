@@ -1,6 +1,6 @@
 package com.zipcodewilmington.froilansfarm.Field;
 
-import com.zipcodewilmington.froilansfarm.Edible.EdibleClass;
+import com.zipcodewilmington.froilansfarm.Edible.Edible;
 
 public class Crop {
     private int yield;
@@ -9,7 +9,7 @@ public class Crop {
     public void Crop(){
 
     }
-public void yield(EdibleClass edible){
+public void yield(Edible edible){
 
 }
 public int intgetYield() {

@@ -1,13 +1,13 @@
 package com.zipcodewilmington.froilansfarm.Field;
 
-import com.zipcodewilmington.froilansfarm.Edible.TomatoClass;
+import com.zipcodewilmington.froilansfarm.Edible.Tomato;
 
 public class TomatoPlant {
     private int yeild;
 public void TomatoPlant ( ) {
 
 }
-public TomatoClass yeild() {
+public Tomato yeild() {
     return null;
 }
 public boolean hasYieldCheck(int yeild){

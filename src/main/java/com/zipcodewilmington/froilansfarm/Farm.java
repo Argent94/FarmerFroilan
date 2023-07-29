@@ -1,4 +1,4 @@
-package com.zipcodewilmington.froilansfarm.Field;
+package com.zipcodewilmington.froilansfarm;
 
 public class Farm {
    /* - cropRows: CropRow [ 5 ]
