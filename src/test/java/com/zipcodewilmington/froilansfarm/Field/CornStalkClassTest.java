@@ -10,6 +10,7 @@ public class CornStalkClassTest {
     }
     @Test
     public void hasYieldCheck(){
+
         //Given
         CornStalk cornStalk=new CornStalk();
         boolean expected=true;
@@ -17,6 +18,7 @@ public class CornStalkClassTest {
         boolean actual=cornStalk.hasYieldCheck(20);
         //Then
         Assert.assertEquals(expected,actual);
+
     }
 
     @Test
@@ -42,6 +44,7 @@ public class CornStalkClassTest {
         Assert.assertEquals(expected,actual);
 
     }
+
 
 
 
