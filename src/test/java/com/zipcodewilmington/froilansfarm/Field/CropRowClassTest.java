@@ -59,5 +59,59 @@ public class CropRowClassTest {
         //Then
 
     }
+    @Test
+    public void fertalizeRowTest() {
+        //Given
+        CropRow cropRowClass = new CropRow();
+        boolean expected=true;
+        //When
+        cropRowClass.fertalizeRow();
+       boolean actual= cropRowClass.beenFertalizedCheck();
+        //Then
+        assertEquals(actual,expected);
+    }
+    @Test
+    public void beenfertalizeRowTest() {
+        //Given
+        CropRow cropRowClass = new CropRow();
+        boolean expected=false;
+        //When
+        boolean actual= cropRowClass.beenFertalizedCheck();
+        //Then
+        assertEquals(actual,expected);
+    }
+    @Test
+    public void harvestRowTest() {
+        //Given
+        CropRow cropRowClass = new CropRow();
+        boolean expected=true;
+        //When
+        cropRowClass.harvestRow();
+        boolean actual= cropRowClass.beenFertalizedCheck();
+        //Then
+        assertEquals(actual,expected);
+    }
+    @Test
+    public void beenHarvestedTest() {
+        //Given
+        CropRow cropRowClass = new CropRow();
+        boolean expected=false;
+        //When
+        boolean actual= cropRowClass.beenHarvesedCheck();
+        //Then
+        assertEquals(actual,expected);
+    }
+    @Test
+    public void isEmptyTest() {
+        //Given
+        CropRow cropRowClass = new CropRow();
+        boolean expected=false;
+        //When
+        boolean actual= cropRowClass.isEmpty();
+        //Then
+        assertEquals(actual,expected);
+    }
+
+
 
 }
