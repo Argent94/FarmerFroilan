@@ -1,6 +1,7 @@
 package com.zipcodewilmington.froilansfarm.Persons;
 import com.zipcodewilmington.froilansfarm.Animals.Animal;
 import com.zipcodewilmington.froilansfarm.Edible.Edible;
+import com.zipcodewilmington.froilansfarm.Shelter.FarmHouse;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -27,6 +28,7 @@ public class PersonClassTest {
     public void setNameTest(){
         // Given
         Person person = new Person();
+        FarmHouse farmhouse = new FarmHouse();
         String expected = "Alex";
 
 
@@ -42,11 +44,16 @@ public class PersonClassTest {
     public void eatCornTest(){
         // Given
         Person person = new Person();
+        Map<String, Integer> expected = new HashMap<String, Integer>();
+        expected.put("Corn", 3);
+        expected.put("Tomato", 4);
 
         // When
+        person.eat("Corn", 3);
+        Map<String, Integer> actual = person.getFoodEaten();
 
         // Then
-
+        Assert.assertEquals(expected, actual);
 
     }
 

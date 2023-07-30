@@ -6,10 +6,11 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+
 public class HorseClassTest {
 
 
-    @Test????
+    @Test
     public void testEat() {
         //Given
         Horse horse = new Horse();

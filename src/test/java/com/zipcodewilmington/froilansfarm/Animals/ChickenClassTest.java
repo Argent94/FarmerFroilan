@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class ChickenClassTest {
 
-    @Test????
+    @Test
 
     public void testEat() {
         //Given
@@ -71,5 +71,5 @@ public class ChickenClassTest {
         Assert.assertEquals(expected,actual);
     }
 
-  =
+
 }
