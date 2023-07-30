@@ -12,7 +12,7 @@ public class Crop {
 public void yield(Edible edible){
 
 }
-public int intgetYield() {
+public int getYield() {
         return 0;
 }
 public int setYield(){
