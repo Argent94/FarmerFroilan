@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Stable extends Shelter<Horse> {
     private List<Horse> horses;
-    private String riddingHorse ;
+    private Horse riddingHorse ;
 
     public Stable(){
 
@@ -28,16 +28,20 @@ public class Stable extends Shelter<Horse> {
 
 
     }
-    public Integer checkOutHorse() {
+    public Horse checkOutHorse() {
 
-        for (int i = 0 ; )
+        for (int i = 0 ; i < horses.size() ; i ++) {
+            riddingHorse = horses.get(i);
+        }
 
-
-        return null;
+        return riddingHorse;
     }
     public Integer checkInHorse () {
 
-        return null;
+        for (int i = 0 ; i < horses.size() ; i ++) {
+            horses.add(riddingHorse);
+        }
+        return getSize();
     }
 
     public void clear () {
