@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class FarmClassTest {
 
     @Test
-    public void testGetFarm(){
+    public void testGetFarmHouse(){
         // Given
         FarmHouse farmHouse = new FarmHouse();
         Farm farm = new Farm();
@@ -20,6 +20,20 @@ public class FarmClassTest {
         Assert.assertEquals(expected,actual);
 
     }
+
+    @Test
+    public void testSetFarmHouse(){
+        // Given
+        FarmHouse farmHouse = new FarmHouse();
+        Farm farm = new Farm();
+        farm.setFarmHouse(farmHouse);
+        FarmHouse expected = farmHouse;
+        // When
+        FarmHouse actual = farm.getFarmHouse();
+        // Then
+        Assert.assertEquals(expected,actual);
+    }
+
 
     @Test
     public void testSetFarm(){
@@ -34,20 +48,7 @@ public class FarmClassTest {
         Assert.assertEquals(expected,actual);
     }
 
-
-    @Test
-    public void testSetFarm(){
-        // Given
-        FarmHouse farmHouse = new FarmHouse();
-        Farm farm = new Farm();
-        farm.setFarmHouse(farmHouse);
-        FarmHouse expected = farmHouse;
-        // When
-        FarmHouse actual = farm.getFarmHouse();
-        // Then
-        Assert.assertEquals(expected,actual);
-    }
-
+<<<<<<< HEAD
 //    @Test
 //    public void testSetFarm(){
 //        // Given
@@ -63,6 +64,23 @@ public class FarmClassTest {
 //        Assert.assertEquals(expected,actual);
 //    }
 //
+=======
+    @Test
+    public void testSetFarm1(){
+        // Given
+        Farm farm = new Farm();
+        FarmHouse farmHouse = new FarmHouse();
+
+
+
+        FarmHouse expected = farmHouse;
+        // When
+        FarmHouse actual = farm.getFarmHouse();  farm.getStock();
+        // Then
+        Assert.assertEquals(expected,actual);
+    }
+
+>>>>>>> bc3623b19f7267a06bd3e573b25a1a6ed3c8f51f
 
 
 

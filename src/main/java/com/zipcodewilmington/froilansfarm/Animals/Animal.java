@@ -4,4 +4,7 @@ import com.zipcodewilmington.froilansfarm.Eater;
 import com.zipcodewilmington.froilansfarm.NoiseMaker;
 
 public class Animal<Edible> implements Eater, NoiseMaker {
+    public String getName() {
+        return "hi";
+    }
 }

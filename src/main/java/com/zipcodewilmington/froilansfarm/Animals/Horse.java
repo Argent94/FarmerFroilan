@@ -1,5 +1,6 @@
 package com.zipcodewilmington.froilansfarm.Animals;
 
+<<<<<<< HEAD
 import com.zipcodewilmington.froilansfarm.Rideable;
 
 import java.util.HashMap;
@@ -38,5 +39,12 @@ public class Horse <Corn> extends Animal implements Rideable {
 
 
 
+=======
+import com.zipcodewilmington.froilansfarm.Edible.Egg;
+import com.zipcodewilmington.froilansfarm.Field.Produce;
+import com.zipcodewilmington.froilansfarm.Rideable;
+
+public class Horse <Corn> extends Animal implements Rideable {
+>>>>>>> bc3623b19f7267a06bd3e573b25a1a6ed3c8f51f
 
 }
