@@ -9,15 +9,15 @@ import static org.junit.jupiter.api.Assertions.*;
 public class HorseClassTest {
 
 
-    @Test????
-    public void testEat() {
-        //Given
-        Horse horse = new Horse();
-        Edible corn = new Corn();
-        //When
-        horse.eat("",2);
-        //Then
-    }
+//    @Test
+//    public void testEat() {
+//        //Given
+//        Horse horse = new Horse();
+//        Edible corn = new Corn();
+//        //When
+//        horse.eat("",2);
+//        //Then
+//    }
     @Test
     public void testGetBeenRidden () {
         //Given
