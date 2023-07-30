@@ -48,6 +48,23 @@ public class FarmClassTest {
         Assert.assertEquals(expected,actual);
     }
 
+<<<<<<< HEAD
+//    @Test
+//    public void testSetFarm(){
+//        // Given
+//        Farm farm = new Farm();
+//        FarmHouse farmHouse = new FarmHouse();
+//        Stock
+//
+//
+//       House expected = farmHouse;
+//        // When
+//        FarmHouse actual = farm.getFarmHouse();  farm.getStock();
+//        // Then
+//        Assert.assertEquals(expected,actual);
+//    }
+//
+=======
     @Test
     public void testSetFarm1(){
         // Given
@@ -63,6 +80,7 @@ public class FarmClassTest {
         Assert.assertEquals(expected,actual);
     }
 
+>>>>>>> bc3623b19f7267a06bd3e573b25a1a6ed3c8f51f
 
 
 
