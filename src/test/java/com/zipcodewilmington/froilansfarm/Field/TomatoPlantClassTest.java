@@ -25,7 +25,7 @@ public class TomatoPlantClassTest {
     @Test
     public void setYield(){
         //Given
-        TomatoPlant tomato=new TomatoPlant());
+        TomatoPlant tomato=new TomatoPlant();
         int expected=6;
         //When
         tomato.setYield(6);
