@@ -32,14 +32,17 @@ public class Stable extends Shelter<Horse> {
         return this.horses.size();
     }
 
+    public void setRidingHorse (Horse horse) {
+        riddingHorse = checkOutHorse();
+    }
+    public Horse getRidingHorse () {
+        return riddingHorse;
+    }
+
     public ArrayList getHorseList () {
         return (ArrayList) horses;
     }
-    public void feeding () {
 
-
-
-    }
     public Horse checkOutHorse() {
 
         for (int i = 0 ; i < horses.size() ; i ++) {

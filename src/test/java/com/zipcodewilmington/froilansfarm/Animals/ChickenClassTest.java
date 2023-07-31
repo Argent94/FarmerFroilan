@@ -28,7 +28,7 @@ public class ChickenClassTest {
 
         //When
         chicken.setBeenFed(true);
-        boolean actual = horse.getBeenFed();
+        boolean actual = chicken.getBeenFed();
         //Then
         Assert.assertEquals(expected,actual);
     }
@@ -41,7 +41,7 @@ public class ChickenClassTest {
 
         //When
         chicken.setBeenFed(true);
-        boolean actual = horse.getBeenFed();
+        boolean actual = chicken.getBeenFed();
         //Then
         Assert.assertEquals(expected,actual);
     }
