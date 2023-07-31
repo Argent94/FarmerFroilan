@@ -75,7 +75,8 @@ class FarmHouseTest {
         farmHouse.addAnimal(person1);
         //When
         Integer expected = 0 ;
-        Integer actual = farmHouse.clear();
+        farmHouse.clear();
+        Integer actual = farmHouse.getSize();
         //Than
         Assert.assertEquals(expected,actual);
     }

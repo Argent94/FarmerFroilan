@@ -22,6 +22,7 @@ public class Horse<Corn> extends Animal implements Rideable {
     }
 
     public void setBeenRidden(boolean beenRidden) {
+
         this.beenRidden = beenRidden;
     }
 
@@ -41,14 +42,11 @@ public class Horse<Corn> extends Animal implements Rideable {
         return this.beenFed;
     }
 
-    public boolean fullCheck(Corn corn) {
-        if (corn != null) {
-            this.foodEaten.put(corn,diet);
+    public boolean fullCheck() {
 
-            if( foodEaten.size() == 3) {
+            if( foodEaten.size() == diet) {
                 this.beenFed = true;
                 return true;
-            }
         }
         return false;
     }
