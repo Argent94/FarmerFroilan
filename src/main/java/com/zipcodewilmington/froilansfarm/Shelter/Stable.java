@@ -1,6 +1,7 @@
 package com.zipcodewilmington.froilansfarm.Shelter;
 
 import com.zipcodewilmington.froilansfarm.Animals.Horse;
+import com.zipcodewilmington.froilansfarm.Persons.Person;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,11 +19,22 @@ public class Stable extends Shelter<Horse> {
 
         horses.add(horse);
     }
+    public Horse getAnimal (Horse horse) {
+        for (int i =  0 ; i  < horses.size() ; i++) {
+            if (horses.get(i).equals(horse)) {
+                return horse;
+            }
+        }
+        return null;
+    }
     public Integer getSize () {
 
         return this.horses.size();
     }
 
+    public ArrayList getHorseList () {
+        return (ArrayList) horses;
+    }
     public void feeding () {
 
 

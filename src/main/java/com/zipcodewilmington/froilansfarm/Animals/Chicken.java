@@ -6,7 +6,7 @@ import com.zipcodewilmington.froilansfarm.Field.Produce;
 import java.util.HashMap;
 
 public class Chicken <Corn> extends Animal implements Produce<Egg> {
-//    private Corn corn;
+    //    private Corn corn;
     //private  yield
     private HashMap foodEaten;
     private boolean beenFed;
@@ -36,15 +36,11 @@ public class Chicken <Corn> extends Animal implements Produce<Egg> {
     public boolean getBeenFed() {
         return this.beenFed;
     }
-    public boolean fullCheck(Corn corn) {
-        if (corn != null) {
-            this.foodEaten.put(corn,diet);
-
-            if( foodEaten.size() == 3) {
+    public boolean fullCheck() {
+            if( foodEaten.size() == diet) {
                 this.beenFed = true;
                 return true;
             }
-        }
         return false;
     }
 }
