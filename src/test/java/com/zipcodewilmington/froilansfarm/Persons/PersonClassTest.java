@@ -28,7 +28,6 @@ public class PersonClassTest {
     public void setNameTest(){
         // Given
         Person person = new Person();
-        FarmHouse farmhouse = new FarmHouse();
         String expected = "Alex";
 
 
