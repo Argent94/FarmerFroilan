@@ -7,7 +7,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Horse<Corn> extends Animal implements Rideable {
-    private Corn corn;
     private HashMap<String, Integer> foodEaten;
     private boolean hasRider;
     private boolean beenRidden;
