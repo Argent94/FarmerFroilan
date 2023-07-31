@@ -68,4 +68,23 @@ public class Person<Edible> extends Animal {
         }
         return false;
     }
+
+    public void eat(String food, Integer num){
+        foodEaten.put(food, foodEaten.get(food) + num);
+    }
+
+    public boolean fullCheck() {
+        if ((foodEaten.get("corn") >= diet.get("corn")) &&
+                (foodEaten.get("tomato") >= diet.get("tomato")) &&
+                        (foodEaten.get("tomato") >= diet.get("tomato"))){
+            return true;
+        }
+        return false;
+    }
+
+    public void emptyBelly(){
+        foodEaten.put("corn", 0);
+        foodEaten.put("tomato", 0);
+        foodEaten.put("egg", 0);
+    }
 }
