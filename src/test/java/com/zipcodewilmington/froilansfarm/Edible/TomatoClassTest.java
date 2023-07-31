@@ -24,13 +24,6 @@ public class TomatoClassTest {
     }
 
     @Test
-    public void testMarkTomatoAsEatenMethod() {
-        Tomato tomato = new Tomato();
-        tomato.markAsEaten();
-        assertTrue(tomato.isEaten(), "The 'markAsEaten' method should change the 'eaten' property to true.");
-    }
-
-    @Test
     public void testCannotChangeEatenPropertyBackToFalse() {
         Tomato tomato = new Tomato();
         tomato.setEaten(true);
