@@ -6,7 +6,6 @@ public class VehicleTest {
 
     @Test
     public void makeNoise(){
-        Vehicle vehicle = new Vehicle();
     }
 
     @Test

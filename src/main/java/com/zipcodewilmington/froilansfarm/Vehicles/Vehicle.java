@@ -1,4 +1,4 @@
 package com.zipcodewilmington.froilansfarm.Vehicles;
 
-public interface AirCraf {
+public class Vehicle {
 }
