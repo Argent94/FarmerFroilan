@@ -6,10 +6,22 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+
 public class HorseClassTest {
 
 
-    @Test????
+<<<<<<< HEAD
+//    @Test
+//    public void testEat() {
+//        //Given
+//        Horse horse = new Horse();
+//        Edible corn = new Corn();
+//        //When
+//        horse.eat("",2);
+//        //Then
+//    }
+=======
+    @Test
     public void testEat() {
         //Given
         Horse horse = new Horse();
@@ -18,6 +30,7 @@ public class HorseClassTest {
         horse.eat("",2);
         //Then
     }
+>>>>>>> bc3623b19f7267a06bd3e573b25a1a6ed3c8f51f
     @Test
     public void testGetBeenRidden () {
         //Given

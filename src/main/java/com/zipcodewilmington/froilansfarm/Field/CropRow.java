@@ -5,12 +5,8 @@ import java.util.List;
 public class CropRow {
     Crop produceType;
 private int yieldRow;
-public boolean beenFertalizedCheck(){
-    return false;
-}
-public boolean beenHarvesedCheck(){
-    return false;
-}
+
+
 public void CropRow(){
 
 }
@@ -20,7 +16,7 @@ public Crop getProduce(){
 public void setProduce(Crop crop){
 
 }
-public int setYieldRow(int yield){
+public int setYieldRow(int row){
     return 0;
 }
 public int getYieldRow(){
@@ -31,15 +27,18 @@ public int getYieldRow(){
 public boolean beenPlantedCheck(){
     return false;
 }
-public boolean beenHarvestedCheck(){
-    return false;
-}
 public void fertalizeRow(){
 
 }
+    public boolean beenFertalizedCheck(){
+        return false;
+    }
 public void harvestRow(){
 
 }
+    public boolean beenHarvesedCheck(){
+        return false;
+    }
 public boolean isEmpty(){
     return false;
 }
