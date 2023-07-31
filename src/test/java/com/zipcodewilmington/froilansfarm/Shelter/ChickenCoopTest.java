@@ -30,7 +30,7 @@ class ChickenCoopTest {
         chickenCoop.addAnimal(chicken1);
         //When
         Integer expected = 2;
-        Integer actual = chicken1.getSize();
+        Integer actual = chickenCoop.getSize();
         //Then
         Assert.assertEquals(expected, actual);
     }
@@ -45,7 +45,7 @@ class ChickenCoopTest {
         chickenCoop.addAnimal(chicken1);
         //When
         Integer expected = 2;
-        Integer actual = chicken1.getSize();
+        Integer actual = chickenCoop.getSize();
         //Then
         Assert.assertEquals(expected, actual);
     }
@@ -59,8 +59,9 @@ class ChickenCoopTest {
         chickenCoop.addAnimal(chicken);
         chickenCoop.addAnimal(chicken1);
         //When
+        chickenCoop.clear();
         Integer expected = 0;
-        Integer actual = chicken1.getSize();
+        Integer actual = chickenCoop.getSize();
         //Then
         Assert.assertEquals(expected, actual);
     }

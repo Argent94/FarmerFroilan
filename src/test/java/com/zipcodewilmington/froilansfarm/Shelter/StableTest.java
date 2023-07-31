@@ -47,6 +47,8 @@ class StableTest {
         Assert.assertEquals(expected,actual);
     }
 
+
+
     @Test
     void getHorseList() {
 
