@@ -61,7 +61,7 @@ class FarmHouseTest {
         //When
         Person expected = person;
         Person actual = farmHouse.getAnimal(person);
-        //Than
+        //Then
         Assert.assertEquals(expected,actual);
     }
 
