@@ -165,6 +165,38 @@ public class FarmerClassTest {
 
     }
 
+    @Test
+    public void fullCheckTestTrue(){
+        // Given
+        Farmer farmer = new Farmer();
+        Boolean expected = true;
+
+
+        // When
+        farmer.eat("corn", 3);
+        farmer.eat("tomato", 4);
+        farmer.eat("egg", 7);
+        Boolean actual = farmer.fullCheck();
+
+        // Then
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void fullCheckTestFalse(){
+        // Given
+        Farmer farmer = new Farmer();
+        Boolean expected = false;
+
+        // When
+        farmer.eat("corn", 3);
+        farmer.eat("egg", 1);
+        Boolean actual = farmer.fullCheck();
+
+        // Then
+        Assert.assertEquals(expected, actual);
+    }
+
 
 
     @Test

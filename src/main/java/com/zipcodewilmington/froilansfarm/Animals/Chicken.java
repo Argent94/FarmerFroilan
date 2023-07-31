@@ -4,11 +4,12 @@ import com.zipcodewilmington.froilansfarm.Edible.Egg;
 import com.zipcodewilmington.froilansfarm.Field.Produce;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class Chicken <Corn> extends Animal implements Produce<Egg> {
 //    private Corn corn;
     //private  yield
-    private HashMap foodEaten;
+    private HashMap<String, Integer> foodEaten;
     private boolean beenFed;
     private String noise;
     final private Integer diet = 1;
@@ -23,7 +24,7 @@ public class Chicken <Corn> extends Animal implements Produce<Egg> {
         this.noise = "cluck";
         this.beenFed = false;
 
-
+        this.foodEaten.put("corn", 0);
     }
     public String makeNoise() {
         return this.noise;
@@ -36,15 +37,23 @@ public class Chicken <Corn> extends Animal implements Produce<Egg> {
     public boolean getBeenFed() {
         return this.beenFed;
     }
-    public boolean fullCheck(Corn corn) {
-        if (corn != null) {
-            this.foodEaten.put(corn,diet);
 
-            if( foodEaten.size() == 3) {
-                this.beenFed = true;
-                return true;
-            }
+    public Map<String, Integer> getFoodEaten() {
+        return foodEaten;
+    }
+
+    public boolean fullCheck() {
+        if (foodEaten.get("corn") >= diet){
+            return true;
         }
         return false;
+    }
+
+    public void eat(String food, Integer num){
+        foodEaten.put(food, foodEaten.get(food) + num);
+    }
+
+    public void emptyBelly(){
+        foodEaten.put("corn", 0);
     }
 }

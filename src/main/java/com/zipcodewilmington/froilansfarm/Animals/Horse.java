@@ -4,10 +4,11 @@ package com.zipcodewilmington.froilansfarm.Animals;
 import com.zipcodewilmington.froilansfarm.Rideable;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class Horse<Corn> extends Animal implements Rideable {
     private Corn corn;
-    private HashMap foodEaten;
+    private HashMap<String, Integer> foodEaten;
     private boolean hasRider;
     private boolean beenRidden;
     private boolean beenFed;
@@ -19,13 +20,15 @@ public class Horse<Corn> extends Animal implements Rideable {
         this.noise = "neigh";
         this.beenRidden = false;
         this.beenFed = false;
+
+        foodEaten.put("corn", 0);
     }
 
     public void setBeenRidden(boolean beenRidden) {
         this.beenRidden = beenRidden;
     }
 
-    public boolean getRidden() {
+    public boolean getBeenRidden() {
         return beenRidden;
     }
 
@@ -41,15 +44,18 @@ public class Horse<Corn> extends Animal implements Rideable {
         return this.beenFed;
     }
 
-    public boolean fullCheck(Corn corn) {
-        if (corn != null) {
-            this.foodEaten.put(corn,diet);
+    public Map<String, Integer> getFoodEaten() {
+        return foodEaten;
+    }
 
-            if( foodEaten.size() == 3) {
-                this.beenFed = true;
-                return true;
-            }
+    public boolean fullCheck() {
+        if (foodEaten.get("corn") >= diet){
+            return true;
         }
         return false;
+    }
+
+    public void emptyBelly(){
+        foodEaten.put("corn", 0);
     }
 }

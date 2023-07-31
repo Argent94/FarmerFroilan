@@ -40,15 +40,16 @@ public class PersonClassTest {
     }
 
     @Test
-    public void eatCornTest(){
+    public void eatTestc(){
         // Given
         Person person = new Person();
         Map<String, Integer> expected = new HashMap<String, Integer>();
-        expected.put("Corn", 3);
-        expected.put("Tomato", 4);
+        expected.put("corn", 3);
+        expected.put("tomato", 4);
 
         // When
-        person.eat("Corn", 3);
+        person.eat("corn", 3);
+        person.eat("tomato", 4);
         Map<String, Integer> actual = person.getFoodEaten();
 
         // Then
@@ -106,10 +107,10 @@ public class PersonClassTest {
         // Given
         Person person = new Person();
         Map<String, Integer> expected = new HashMap<String, Integer>();
-        expected.put("Corn", 3);
+        expected.put("corn", 3);
 
         // When
-        person.eat("Corn", 3);
+        person.eat("corn", 3);
         Map<String, Integer> actual = person.getFoodEaten();
 
         // Then
@@ -172,6 +173,56 @@ public class PersonClassTest {
 
     }
 
+    @Test
+    public void fullCheckTestTrue(){
+        // Given
+        Person person = new Person();
+        Boolean expected = true;
+
+
+        // When
+        person.eat("corn", 3);
+        person.eat("tomato", 4);
+        person.eat("egg", 7);
+        Boolean actual = person.fullCheck();
+
+        // Then
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void fullCheckTestFalse(){
+        // Given
+        Person person = new Person();
+        Boolean expected = false;
+
+        // When
+        person.eat("corn", 3);
+        person.eat("egg", 1);
+        Boolean actual = person.fullCheck();
+
+        // Then
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void emptyBellyTest(){
+        // Given
+        Person person = new Person();
+        Map<String, Integer> expected = new HashMap<String, Integer>();
+        expected.put("corn", 0);
+        expected.put("tomato", 0);
+        expected.put("egg", 0);
+
+        // When
+        person.eat("corn", 3);
+        person.eat("tomato", 4);
+        person.emptyBelly();
+        Map<String, Integer> actual = person.getFoodEaten();
+
+        // Then
+        Assert.assertEquals(expected, actual);
+    }
 
 
     @Test

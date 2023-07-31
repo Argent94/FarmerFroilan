@@ -2,8 +2,12 @@ package com.zipcodewilmington.froilansfarm.Animals;
 
 import com.zipcodewilmington.froilansfarm.Edible.Corn;
 import com.zipcodewilmington.froilansfarm.Edible.Edible;
+import com.zipcodewilmington.froilansfarm.Persons.Person;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
+
+import java.util.HashMap;
+import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -14,11 +18,15 @@ public class ChickenClassTest {
     public void testEat() {
         //Given
         Chicken chicken = new Chicken();
-        Edible corn = new Corn();
-        //When
-        chicken.eat();
-        //Then
-        Assert.assertEquals();
+        Map<String, Integer> expected = new HashMap<String, Integer>();
+        expected.put("corn", 3);
+
+        // When
+        chicken.eat("corn", 3);
+        Map<String, Integer> actual = chicken.getFoodEaten();
+
+        // Then
+        Assert.assertEquals(expected, actual);
     }
     @Test
     public void testGetBeenFed () {
@@ -28,7 +36,7 @@ public class ChickenClassTest {
 
         //When
         chicken.setBeenFed(true);
-        boolean actual = horse.getBeenFed();
+        boolean actual = chicken.getBeenFed();
         //Then
         Assert.assertEquals(expected,actual);
     }
@@ -41,7 +49,7 @@ public class ChickenClassTest {
 
         //When
         chicken.setBeenFed(true);
-        boolean actual = horse.getBeenFed();
+        boolean actual = chicken.getBeenFed();
         //Then
         Assert.assertEquals(expected,actual);
     }
@@ -69,6 +77,49 @@ public class ChickenClassTest {
         String actual = chicken.makeNoise();
         //Then
         Assert.assertEquals(expected,actual);
+    }
+
+    @org.junit.Test
+    public void fullCheckTestTrue(){
+        // Given
+        Chicken chicken = new Chicken();
+        Boolean expected = true;
+
+        // When
+        chicken.eat("corn", 3);
+        Boolean actual = chicken.fullCheck();
+
+        // Then
+        Assert.assertEquals(expected, actual);
+    }
+
+    @org.junit.Test
+    public void emptyBellyTest(){
+        // Given
+        Chicken chicken = new Chicken();
+        Map<String, Integer> expected = new HashMap<String, Integer>();
+        expected.put("corn", 0);
+
+        // When
+        chicken.eat("corn", 3);
+        chicken.emptyBelly();
+        Map<String, Integer> actual = chicken.getFoodEaten();
+
+        // Then
+        Assert.assertEquals(expected, actual);
+    }
+
+    @org.junit.Test
+    public void fullCheckTestFalse(){
+        // Given
+        Chicken chicken = new Chicken();
+        Boolean expected = false;
+
+        // When
+        Boolean actual = chicken.fullCheck();
+
+        // Then
+        Assert.assertEquals(expected, actual);
     }
 
 

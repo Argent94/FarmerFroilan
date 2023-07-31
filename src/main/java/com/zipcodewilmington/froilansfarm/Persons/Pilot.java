@@ -67,4 +67,13 @@ public class Pilot extends Person implements Rider {
         }
         return false;
     }
+
+    public boolean fullCheck() {
+        if ((foodEaten.get("corn") >= diet.get("corn")) &&
+                (foodEaten.get("tomato") >= diet.get("tomato")) &&
+                (foodEaten.get("tomato") >= diet.get("tomato"))){
+            return true;
+        }
+        return false;
+    }
 }
