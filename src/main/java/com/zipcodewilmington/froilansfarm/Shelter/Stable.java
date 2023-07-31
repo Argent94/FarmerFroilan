@@ -43,20 +43,19 @@ public class Stable extends Shelter<Horse> {
         return (ArrayList) horses;
     }
 
-    public Horse checkOutHorse() {
-
-        for (int i = 0 ; i < horses.size() ; i ++) {
-            riddingHorse = horses.get(i);
-        }
-
-        return riddingHorse;
+    public void setHorseList(ArrayList<Horse> list){
+        horses = list;
     }
-    public Integer checkInHorse () {
 
-        for (int i = 0 ; i < horses.size() ; i ++) {
-            horses.add(riddingHorse);
-        }
-        return getSize();
+    public void checkOutHorse() {
+
+        riddingHorse = horses.get(0);
+
+    }
+    public void checkInHorse () {
+        horses.add(riddingHorse);
+
+        riddingHorse = null;
     }
 
     public void clear () {
