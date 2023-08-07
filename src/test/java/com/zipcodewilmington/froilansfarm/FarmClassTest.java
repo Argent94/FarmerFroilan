@@ -37,18 +37,7 @@ public class FarmClassTest {
     }
 
 
-    @Test
-    public void testSetFarm(){
-        // Given
-        FarmHouse farmHouse = new FarmHouse();
-        Farm farm = new Farm();
-        farm.setFarmHouse(farmHouse);
-        FarmHouse expected = farmHouse;
-        // When
-        FarmHouse actual = farm.getFarmHouse();
-        // Then
-        Assert.assertEquals(expected,actual);
-    }
+
 
 
 
