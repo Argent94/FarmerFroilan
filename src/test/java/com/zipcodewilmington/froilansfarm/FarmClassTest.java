@@ -26,9 +26,10 @@ public class FarmClassTest {
     @Test
     public void testSetFarmHouse(){
         // Given
-        FarmHouse farmHouse = new FarmHouse();
         Farm farm = new Farm();
+        FarmHouse farmHouse = new FarmHouse();
         farm.setFarmHouse(farmHouse);
+
         FarmHouse expected = farmHouse;
         // When
         FarmHouse actual = farm.getFarmHouse();
@@ -37,50 +38,11 @@ public class FarmClassTest {
     }
 
 
-    @Test
-    public void testSetFarm(){
-        // Given
-        FarmHouse farmHouse = new FarmHouse();
-        Farm farm = new Farm();
-        farm.setFarmHouse(farmHouse);
-        FarmHouse expected = farmHouse;
-        // When
-        FarmHouse actual = farm.getFarmHouse();
-        // Then
-        Assert.assertEquals(expected,actual);
-    }
-
-// HEAD
-//    @Test
-//    public void testSetFarm(){
-//        // Given
-//        Farm farm = new Farm();
-//        FarmHouse farmHouse = new FarmHouse();
-//        Stock
-//
-//
-//       House expected = farmHouse;
-//        // When
-//        FarmHouse actual = farm.getFarmHouse();  farm.getStock();
-//        // Then
-//        Assert.assertEquals(expected,actual);
-//    }
-//
-
-    @Test
-    public void testSetFarm1(){
-        // Given
-        Farm farm = new Farm();
-        FarmHouse farmHouse = new FarmHouse();
 
 
 
-        FarmHouse expected = farmHouse;
-        // When
-        FarmHouse actual = farm.getFarmHouse();  farm.getStock();
-        // Then
-        Assert.assertEquals(expected,actual);
-    }
+
+
 
 
 
