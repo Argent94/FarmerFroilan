@@ -27,6 +27,7 @@ public class TomatoClassTest {
         assertFalse(tomato.isEaten(), "The 'eaten' property should remain false if not explicitly set.");
     }
 
+
 }
 
 
