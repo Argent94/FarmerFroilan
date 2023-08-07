@@ -16,7 +16,6 @@ public abstract class Animal<Edible> implements Eater, NoiseMaker {
         return "sound";
     }
 
-    }
-
-
 }
+
+
