@@ -2,7 +2,8 @@ package com.zipcodewilmington.froilansfarm.Field;
 
 import com.zipcodewilmington.froilansfarm.Edible.Edible;
 
-public class Crop {
+public class Crop <EdibleType extends Edible> implements Produce<Edible>{
+
 
     private int yield;
 
@@ -15,6 +16,9 @@ public class Crop {
 
     }
 
+public int yield(){
+return 0;
+}
 
 public int getYield() {
         return yield;
@@ -31,6 +35,7 @@ readyToHarvest=true;
 public boolean beenFertalizedCheck(){
         return readyToHarvest;
 }
+
 
 
 }
