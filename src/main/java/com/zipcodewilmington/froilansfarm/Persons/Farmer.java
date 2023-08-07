@@ -19,6 +19,10 @@ public class Farmer extends Person implements Rider, Botanist{
         isRiding = false;
         diet = new HashMap<>();
 
+        foodEaten.put("corn", 0);
+        foodEaten.put("tomato", 0);
+        foodEaten.put("egg", 0);
+
         diet.put("corn", 1);
         diet.put("tomato", 2);
         diet.put("egg", 5);
@@ -71,9 +75,20 @@ public class Farmer extends Person implements Rider, Botanist{
     public boolean fullCheck() {
         if ((foodEaten.get("corn") >= diet.get("corn")) &&
                 (foodEaten.get("tomato") >= diet.get("tomato")) &&
-                (foodEaten.get("tomato") >= diet.get("tomato"))){
+                (foodEaten.get("corn") >= diet.get("corn"))){
             return true;
         }
         return false;
+    }
+
+    public void eat(String food, Integer num){
+        foodEaten.put(food, foodEaten.get(food) + num);
+    }
+
+
+    public void emptyBelly(){
+        foodEaten.put("corn", 0);
+        foodEaten.put("tomato", 0);
+        foodEaten.put("egg", 0);
     }
 }

@@ -97,10 +97,14 @@ public class PilotClassTest {
         // Given
         Pilot pilot = new Pilot();
         Map<String, Integer> expected = new HashMap<String, Integer>();
-        expected.put("Corn", 3);
+        expected.put("corn", 3);
+        expected.put("tomato", 4);
+        expected.put("egg", 2);
 
         // When
-        pilot.eat("Corn", 3);
+        pilot.eat("corn", 3);
+        pilot.eat("tomato", 4);
+        pilot.eat("egg", 2);
         Map<String, Integer> actual = pilot.getFoodEaten();
 
         // Then

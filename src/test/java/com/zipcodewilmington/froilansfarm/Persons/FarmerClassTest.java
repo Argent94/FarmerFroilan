@@ -99,10 +99,14 @@ public class FarmerClassTest {
         // Given
         Farmer farmer = new Farmer();
         Map<String, Integer> expected = new HashMap<String, Integer>();
-        expected.put("Corn", 3);
+        expected.put("corn", 3);
+        expected.put("tomato", 4);
+        expected.put("egg", 2);
 
         // When
-        farmer.eat("Corn", 3);
+        farmer.eat("corn", 3);
+        farmer.eat("tomato", 4);
+        farmer.eat("egg", 2);
         Map<String, Integer> actual = farmer.getFoodEaten();
 
         // Then
@@ -200,13 +204,27 @@ public class FarmerClassTest {
 
 
     @Test
-    public void personIsInstanceOfAnimalTest(){
+    public void farmerIsInstanceOfPersonTest(){
         // Given
         Farmer farmer = new Farmer();
         Boolean expected = true;
 
         // When
         Boolean actual = farmer instanceof Person;
+
+        // Then
+        Assert.assertEquals(expected, actual);
+
+    }
+
+    @Test
+    public void farmerIsInstanceOfAnimalTest(){
+        // Given
+        Farmer farmer = new Farmer();
+        Boolean expected = true;
+
+        // When
+        Boolean actual = farmer instanceof Animal;
 
         // Then
         Assert.assertEquals(expected, actual);
