@@ -18,7 +18,7 @@ public class CropClassTest {
         Crop cropClass = new Crop();
         Corn corn = new Corn();
         //then
-        cropClass.yield(corn);
+        cropClass.yield();
         cropClass.setYield(4);
        int actual=cropClass.getYield();
        //then
