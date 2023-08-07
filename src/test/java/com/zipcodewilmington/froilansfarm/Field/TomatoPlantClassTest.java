@@ -16,7 +16,7 @@ public class TomatoPlantClassTest {
         TomatoPlant tomato=new TomatoPlant();
         boolean expected=true;
         //When
-        boolean actual=tomato.hasYieldCheck(20);
+        boolean actual=tomato.hasYieldCheck();
         //Then
         Assert.assertEquals(expected,actual);
 
