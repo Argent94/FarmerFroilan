@@ -40,16 +40,18 @@ public class PersonClassTest {
     }
 
     @Test
-    public void eatTestc(){
+    public void eatTest(){
         // Given
         Person person = new Person();
         Map<String, Integer> expected = new HashMap<String, Integer>();
         expected.put("corn", 3);
         expected.put("tomato", 4);
+        expected.put("egg", 2);
 
         // When
         person.eat("corn", 3);
         person.eat("tomato", 4);
+        person.eat("egg", 2);
         Map<String, Integer> actual = person.getFoodEaten();
 
         // Then
@@ -108,9 +110,13 @@ public class PersonClassTest {
         Person person = new Person();
         Map<String, Integer> expected = new HashMap<String, Integer>();
         expected.put("corn", 3);
+        expected.put("tomato", 4);
+        expected.put("egg", 2);
 
         // When
         person.eat("corn", 3);
+        person.eat("tomato", 4);
+        person.eat("egg", 2);
         Map<String, Integer> actual = person.getFoodEaten();
 
         // Then

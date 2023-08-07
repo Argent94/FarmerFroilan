@@ -27,8 +27,7 @@ public class CornStalk  {
     }
     public void setYield(int yield){
 
+
         this.yield=yield;
     }
 
-
-}

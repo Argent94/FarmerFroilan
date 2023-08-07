@@ -14,8 +14,8 @@ public abstract class Animal<Edible> implements Eater, NoiseMaker {
 
     public String makeNoise() {
         return "sound";
-
     }
 
-
 }
+
+

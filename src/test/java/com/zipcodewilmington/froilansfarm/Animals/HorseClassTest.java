@@ -28,10 +28,16 @@ public class HorseClassTest {
     public void testEat() {
         //Given
         Horse horse = new Horse();
-        Edible corn = new Corn();
-        //When
-        horse.eat("",2);
-        //Then
+        Map<String, Integer> expected = new HashMap<String, Integer>();
+        expected.put("corn", 3);
+
+        // When
+        horse.eat("corn", 3);
+        Map<String, Integer> actual = horse.getFoodEaten();
+
+        // Then
+        Assert.assertEquals(expected, actual);
+
     }
 
     @Test
