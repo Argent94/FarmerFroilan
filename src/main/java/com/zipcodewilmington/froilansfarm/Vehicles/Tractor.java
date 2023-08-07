@@ -1,4 +1,11 @@
 package com.zipcodewilmington.froilansfarm.Vehicles;
 
-public class Tractor {
+import com.zipcodewilmington.froilansfarm.Rideable;
+
+import java.io.IOException;
+import java.nio.CharBuffer;
+
+public class Tractor implements Rideable {
+
+
 }
