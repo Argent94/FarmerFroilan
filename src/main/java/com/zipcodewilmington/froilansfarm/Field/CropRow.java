@@ -1,19 +1,20 @@
 package com.zipcodewilmington.froilansfarm.Field;
 
-import java.util.List;
+import java.util.*;
 
-public class CropRow {
-    Crop produceType;
+public class CropRow <CropType extends Crop>  {
+    ArrayList <CropType> cropList;
+    CropType produceType;
 private int yieldRow;
 
 
 public void CropRow(){
 
 }
-public Crop getProduce(){
+public CropType getProduce(){
     return null;
 }
-public void setProduce(Crop crop){
+public void setProduce(CropType crop){
 
 }
 public int setYieldRow(int row){
@@ -39,7 +40,9 @@ public void harvestRow(){
     public boolean beenHarvesedCheck(){
         return false;
     }
-public boolean isEmpty(){
-    return false;
-}
+
+
+    public boolean isEmpty() {
+    return true;
+    }
 }

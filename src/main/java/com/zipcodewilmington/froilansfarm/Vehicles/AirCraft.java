@@ -6,6 +6,13 @@ public abstract class AirCraft<Pilot extends Rider> extends Vehicle<Pilot>{
 
     Pilot rider;
 
+    public AirCraft(Pilot rider) {
+        this.rider = rider;
+    }
+
+    protected AirCraft() {
+    }
+
     @Override
     public void addRider(Pilot pilot) {
 
@@ -14,6 +21,7 @@ public abstract class AirCraft<Pilot extends Rider> extends Vehicle<Pilot>{
     public String makeNoise() {
         return "whoosh";
     }
+
 
     public abstract void addRider(Object pilot);
 }

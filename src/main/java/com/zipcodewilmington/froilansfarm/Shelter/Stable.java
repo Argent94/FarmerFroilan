@@ -21,14 +21,14 @@ public class Stable extends Shelter<Horse> {
     }
 
 
-    public Horse getAnimal(Horse horse) {
-        for (int i = 0; i < horses.size(); i++) {
-            if (horses.get(i).equals(horse)) {
-                return horse;
-            }
-        }
-        return null;
-    }
+//    public Horse getAnimal(Horse horse) {
+//        for (int i = 0; i < horses.size(); i++) {
+//            if (horses.get(i).equals(horse)) {
+//                return horse;
+//            }
+//        }
+//        return null;
+//    }
 
     public Integer getSize() {
 

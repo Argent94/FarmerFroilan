@@ -34,6 +34,7 @@ public class CornClassTest {
      */
 
 
+
     @Test
     public void testMultipleCornInstances() {
         Corn corn1 = new Corn();

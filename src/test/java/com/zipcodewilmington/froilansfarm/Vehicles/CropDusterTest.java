@@ -28,7 +28,7 @@ public class CropDusterTest {
         Boolean expected = true;
         //When
         cropDuster.addRider(rider);
-        Boolean actual = cropDuster.hasRider(rider);
+        Boolean actual = cropDuster.hasRiderCheck();
         //Then
         Assert.assertEquals(expected, actual);
 
@@ -41,8 +41,8 @@ public class CropDusterTest {
         Pilot rider = new Pilot();
         Boolean expected = false;
         //When
-        cropDuster.removeRider(rider);
-        Boolean actual = cropDuster.removeRider(rider);
+        cropDuster.removeRider();
+        Boolean actual = cropDuster.hasRiderCheck();
         //Then
         Assert.assertEquals(expected, actual);
     }
@@ -55,7 +55,7 @@ public class CropDusterTest {
         Boolean expected = true;
         //When
         cropDuster.addRider(pilot);
-        Boolean actual = cropDuster.hasRider();
+        Boolean actual = cropDuster.hasRiderCheck();
         //Then
         Assert.assertEquals(expected, actual);
     }
@@ -65,8 +65,9 @@ public class CropDusterTest {
         //Given
         CropDuster cropDuster = new CropDuster();
         Boolean expected = true;
+        cropDuster.fertilizing();
         //When
-        Boolean actual = cropDuster.fertilize();
+        Boolean actual = cropDuster.getFertilize();
         //Then
         Assert.assertEquals(expected, actual);
 
