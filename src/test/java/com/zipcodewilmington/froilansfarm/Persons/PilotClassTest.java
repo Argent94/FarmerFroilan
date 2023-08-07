@@ -163,7 +163,37 @@ public class PilotClassTest {
 
     }
 
+    @Test
+    public void fullCheckTestTrue(){
+        // Given
+        Pilot pilot = new Pilot();
+        Boolean expected = true;
 
+
+        // When
+        pilot.eat("corn", 3);
+        pilot.eat("tomato", 4);
+        pilot.eat("egg", 7);
+        Boolean actual = pilot.fullCheck();
+
+        // Then
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void fullCheckTestFalse(){
+        // Given
+        Pilot pilot = new Pilot();
+        Boolean expected = false;
+
+        // When
+        pilot.eat("corn", 3);
+        pilot.eat("egg", 1);
+        Boolean actual = pilot.fullCheck();
+
+        // Then
+        Assert.assertEquals(expected, actual);
+    }
 
     @Test
     public void personIsInstanceOfAnimalTest(){

@@ -1,10 +1,21 @@
 package com.zipcodewilmington.froilansfarm.Edible;
 
 public class Corn extends Edible{
-    public String isEaten() {
-        return null;
+
+    private Boolean eaten;
+
+    public Corn(){
+        eaten = false;
     }
 
-    public void setEaten(String yes) {
+    public boolean isEaten() {
+        if (eaten == true){
+            return true;
+        }
+        return false;
+    }
+
+    public void setEaten(Boolean b) {
+        eaten = b;
     }
 }

@@ -4,10 +4,14 @@ import com.zipcodewilmington.froilansfarm.Edible.Edible;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 
 public class HorseClassTest {
+
 
 
 //    @Test
@@ -19,6 +23,7 @@ public class HorseClassTest {
 //        horse.eat("",2);
 //        //Then
 //    }
+
     @Test
     public void testEat() {
         //Given
@@ -143,9 +148,49 @@ public class HorseClassTest {
         Assert.assertFalse(expected,actual);
     }
 
-//Need to make test for fullCheck()
+    @org.junit.Test
+    public void fullCheckTestTrue(){
+        // Given
+        Horse horse = new Horse();
+        Boolean expected = true;
 
+        // When
+        horse.eat("corn", 3);
+        Boolean actual = horse.fullCheck();
 
+        // Then
+        Assert.assertEquals(expected, actual);
+    }
+
+    @org.junit.Test
+    public void fullCheckTestFalse(){
+        // Given
+        Horse horse = new Horse();
+        Boolean expected = false;
+
+        // When
+        horse.eat("corn", 2);
+        Boolean actual = horse.fullCheck();
+
+        // Then
+        Assert.assertEquals(expected, actual);
+    }
+
+    @org.junit.Test
+    public void emptyBellyTest(){
+        // Given
+        Horse horse = new Horse();
+        Map<String, Integer> expected = new HashMap<String, Integer>();
+        expected.put("corn", 0);
+
+        // When
+        horse.eat("corn", 3);
+        horse.emptyBelly();
+        Map<String, Integer> actual = horse.getFoodEaten();
+
+        // Then
+        Assert.assertEquals(expected, actual);
+    }
 
 
 

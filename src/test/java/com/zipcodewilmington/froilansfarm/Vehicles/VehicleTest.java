@@ -2,7 +2,7 @@ package com.zipcodewilmington.froilansfarm.Vehicles;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class VehicleTest {
+public abstract class VehicleTest {
 
     @Test
     public void makeNoise(){

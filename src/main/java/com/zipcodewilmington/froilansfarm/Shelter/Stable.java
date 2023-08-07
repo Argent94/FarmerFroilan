@@ -8,7 +8,7 @@ import java.util.List;
 
 public class Stable extends Shelter<Horse> {
     private List<Horse> horses;
-    private Horse riddingHorse ;
+    private Horse ridingHorse ;
 
     public Stable(){
 
@@ -33,30 +33,29 @@ public class Stable extends Shelter<Horse> {
     }
 
     public void setRidingHorse (Horse horse) {
-        riddingHorse = checkOutHorse();
+        ridingHorse = horse;
     }
     public Horse getRidingHorse () {
-        return riddingHorse;
+        return ridingHorse;
     }
 
     public ArrayList getHorseList () {
         return (ArrayList) horses;
     }
 
-    public Horse checkOutHorse() {
-
-        for (int i = 0 ; i < horses.size() ; i ++) {
-            riddingHorse = horses.get(i);
-        }
-
-        return riddingHorse;
+    public void setHorseList(ArrayList<Horse> list){
+        horses = list;
     }
-    public Integer checkInHorse () {
 
-        for (int i = 0 ; i < horses.size() ; i ++) {
-            horses.add(riddingHorse);
-        }
-        return getSize();
+    public void checkOutHorse() {
+
+        ridingHorse = horses.get(0);
+
+    }
+    public void checkInHorse () {
+        horses.add(ridingHorse);
+
+        ridingHorse = null;
     }
 
     public void clear () {
