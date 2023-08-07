@@ -6,22 +6,27 @@ import com.zipcodewilmington.froilansfarm.Edible.Tomato;
 public class CornStalk {
 
     private int yield;
-    public void CornStalk ( ) {
+
+    public void CornStalk() {
 
     }
+
     public Corn yield() {
         return null;
     }
-    public boolean hasYieldCheck(){
+
+    public boolean hasYieldCheck() {
         return yield > 0;
     }
-    public int getYield (){
+
+    public int getYield() {
         return yield;
     }
-    public void setYield(int yield){
+
+    public void setYield(int yield) {
 
 
-        this.yield=yield;
+        this.yield = yield;
     }
 
 }

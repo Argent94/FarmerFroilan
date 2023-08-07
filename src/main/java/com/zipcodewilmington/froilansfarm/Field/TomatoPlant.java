@@ -4,21 +4,26 @@ import com.zipcodewilmington.froilansfarm.Edible.Tomato;
 
 public class TomatoPlant {
     private int yield;
-public void TomatoPlant ( ) {
 
-}
-public Tomato yeild() {
-    return null;
-}
-    public boolean hasYieldCheck(){
+    public void TomatoPlant() {
+
+    }
+
+    public Tomato yield() {
+        return null;
+    }
+
+    public boolean hasYieldCheck() {
         return yield > 0;
     }
-    public int getYield (){
+
+    public int getYield() {
         return yield;
     }
-    public void setYield(int yield){
 
-        this.yield=yield;
+    public void setYield(int yield) {
+
+        this.yield = yield;
     }
 
 

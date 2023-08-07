@@ -13,10 +13,11 @@ public class TomatoPlantClassTest {
     public void hasYieldCheck(){
 
         //Given
-        TomatoPlant tomato=new TomatoPlant();
-        boolean expected=true;
+        TomatoPlant tomato = new TomatoPlant();
+        boolean expected = true;
         //When
-        boolean actual=tomato.hasYieldCheck();
+        tomato.setYield(2);
+        boolean actual = tomato.hasYieldCheck();
         //Then
         Assert.assertEquals(expected,actual);
 
@@ -37,10 +38,11 @@ public class TomatoPlantClassTest {
     @Test
     public void getYieldCheck(){
         //Given
-        TomatoPlant tomato=new TomatoPlant();
-        int expected=6;
+        TomatoPlant tomato = new TomatoPlant();
+        int expected = 6;
         //When
-        int actual=tomato.getYield();
+        tomato.setYield(6);
+        int actual = tomato.getYield();
         //Then
         Assert.assertEquals(expected,actual);
 
