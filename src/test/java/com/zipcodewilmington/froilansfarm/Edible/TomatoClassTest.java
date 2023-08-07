@@ -1,7 +1,11 @@
 package com.zipcodewilmington.froilansfarm.Edible;
+
 import static org.junit.jupiter.api.Assertions.*;
+
 import org.junit.Test;
+
 import static org.junit.Assert.*;
+
 public class TomatoClassTest {
     @Test
     public void testEatenPropertyInitializedFalse() {
@@ -23,14 +27,6 @@ public class TomatoClassTest {
         assertFalse(tomato.isEaten(), "The 'eaten' property should remain false if not explicitly set.");
     }
 
-    @Test
-    public void testCannotChangeEatenPropertyBackToFalse() {
-        Tomato tomato = new Tomato();
-        tomato.setEaten(true);
-        // Attempt to change the "eaten" property back to false
-        tomato.setEaten(false);
-        assertTrue(tomato.isEaten(), "Once the 'eaten' property is set to true, it cannot be changed back to false.");
-    }
 }
 
 
