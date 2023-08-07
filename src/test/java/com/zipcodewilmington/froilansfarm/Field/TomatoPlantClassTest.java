@@ -48,4 +48,22 @@ public class TomatoPlantClassTest {
 
     }
 
+    @Test
+    public void yieldTest(){
+        //Given
+        TomatoPlant tomato=new TomatoPlant();
+
+        boolean expected=true;
+        //When
+        boolean actualbool=false;
+        int actual =tomato.yield();
+        if(actual<=6||actual>=1){
+            actualbool=true;
+        }
+
+
+        //Then
+        Assert.assertEquals(expected,actualbool);
+    }
+
 }

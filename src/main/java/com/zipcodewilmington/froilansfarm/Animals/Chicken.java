@@ -14,8 +14,9 @@ public class Chicken <Corn> extends Animal implements Produce<Egg> {
     private String noise;
     final private Integer diet = 1;
     @Override
-    public void yield() {
+    public int yield() {
 
+        return 0;
     }
 
 

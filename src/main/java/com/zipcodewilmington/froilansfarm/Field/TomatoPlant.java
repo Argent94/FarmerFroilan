@@ -1,14 +1,18 @@
 package com.zipcodewilmington.froilansfarm.Field;
 
-import com.zipcodewilmington.froilansfarm.Edible.Tomato;
+import java.util.Random;
 
 public class TomatoPlant {
     private int yield;
-public void TomatoPlant ( ) {
+public TomatoPlant() {
 
 }
-public Tomato yeild() {
-    return null;
+public int yield() {
+    Random randomNum= new Random();
+    int randomYield;
+    randomYield= randomNum.nextInt(6);
+
+    return randomYield;
 }
     public boolean hasYieldCheck(){
         return yield > 0;
