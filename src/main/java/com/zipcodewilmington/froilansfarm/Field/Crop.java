@@ -7,11 +7,11 @@ public class Crop {
     private int yield;
 
 
-    private boolean readyToHarvest=false;
+    private boolean readyToHarvest;
 
     public Crop() {
-        this.yield = null;
-        this.readyToHarvest = null;
+        this.yield = 0;
+        this.readyToHarvest = false;
 
     }
 
