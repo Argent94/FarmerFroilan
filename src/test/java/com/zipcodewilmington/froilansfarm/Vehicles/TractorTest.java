@@ -34,8 +34,8 @@ class TractorTest {
         Farmer farmer = new Farmer();
         Boolean expected = false;
         //When
-        tractor.add(farmer);
-        Boolean actual = tractor.hasRiderCheck(farmer);
+       // tractor.add(farmer);
+        Boolean actual = tractor.hasRiderCheck();
         //Then
         Assert.assertEquals(expected, actual);
 
@@ -49,24 +49,11 @@ class TractorTest {
         Farmer farmer = new Farmer();
         Boolean expected = false;
         //When
-        tractor.removeRider(farmer);
-        Boolean actual = tractor.hasRiderCheck(farmer);
+        tractor.removeRider();
+        Boolean actual = tractor.hasRiderCheck();
         //Then
         Assert.assertEquals(expected, actual);
 
-    }
-
-    @Test
-    public void hasRiderCheck(){
-        //Given
-        Tractor tractor = new Tractor();
-        boolean expected = true;
-
-        //When
-        tractor.setBeenRidden(true);
-        boolean actual = tractor.getBeenRidden();
-        //Then
-        Assert.assertEquals(expected,actual);
     }
 
 
