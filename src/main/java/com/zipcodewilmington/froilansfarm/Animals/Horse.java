@@ -46,6 +46,9 @@ public class Horse<Corn> extends Animal implements Rideable {
     public Map<String, Integer> getFoodEaten() {
         return foodEaten;
     }
+    public void eat(String food, Integer num){
+        foodEaten.put(food, foodEaten.get(food) + num);
+    }
 
     public boolean fullCheck() {
         if (foodEaten.get("corn") >= diet){

@@ -88,12 +88,13 @@ class StableTest {
 
         Stable stable = new Stable();
         Horse horse = new Horse();
-        Horse horse1 = new Horse();
+        //Horse horse1 = new Horse();
         stable.addAnimal(horse);
         stable.checkOutHorse();
         //When
-        Integer expected = 2;
+
         stable.checkInHorse();
+        Integer expected = 1;
 
         Integer actual = stable.getSize();
         //Then

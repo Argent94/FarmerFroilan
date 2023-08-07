@@ -86,7 +86,7 @@ public class ChickenClassTest {
         Boolean expected = true;
 
         // When
-        chicken.eat("corn", 3);
+        chicken.eat("corn", 1);
         Boolean actual = chicken.fullCheck();
 
         // Then
