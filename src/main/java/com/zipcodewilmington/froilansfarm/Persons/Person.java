@@ -20,6 +20,10 @@ public class Person<Edible> extends Animal {
         isRiding = false;
         diet = new HashMap<>();
 
+        foodEaten.put("corn", 0);
+        foodEaten.put("tomato", 0);
+        foodEaten.put("egg", 0);
+
         diet.put("corn", 2);
         diet.put("tomato", 2);
         diet.put("egg", 2);
@@ -86,5 +90,10 @@ public class Person<Edible> extends Animal {
         foodEaten.put("corn", 0);
         foodEaten.put("tomato", 0);
         foodEaten.put("egg", 0);
+    }
+
+    @Override
+    public String makeNoise(){
+        return "Hello";
     }
 }
