@@ -48,7 +48,7 @@ public class FarmClassTest {
         Assert.assertEquals(expected,actual);
     }
 
-<<<<<<< HEAD
+// HEAD
 //    @Test
 //    public void testSetFarm(){
 //        // Given
@@ -64,7 +64,7 @@ public class FarmClassTest {
 //        Assert.assertEquals(expected,actual);
 //    }
 //
-=======
+
     @Test
     public void testSetFarm1(){
         // Given
@@ -80,7 +80,7 @@ public class FarmClassTest {
         Assert.assertEquals(expected,actual);
     }
 
->>>>>>> bc3623b19f7267a06bd3e573b25a1a6ed3c8f51f
+
 
 
 

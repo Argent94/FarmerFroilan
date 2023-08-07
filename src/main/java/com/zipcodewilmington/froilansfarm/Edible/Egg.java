@@ -18,4 +18,7 @@ public class Egg {
         eaten = b;
     }
 
+    public void markAsEaten() {
+        eaten = true;
+    }
 }

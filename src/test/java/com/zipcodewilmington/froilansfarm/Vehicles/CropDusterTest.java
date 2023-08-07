@@ -1,4 +1,5 @@
 package com.zipcodewilmington.froilansfarm.Vehicles;
+import com.zipcodewilmington.froilansfarm.Persons.Pilot;
 import com.zipcodewilmington.froilansfarm.Rider;
 import org.junit.Assert;
 import org.junit.Test;
@@ -12,7 +13,7 @@ public class CropDusterTest {
     public void makeNoise(){
         //Given
         CropDuster cropDuster = new CropDuster();
-        String expected = "TWEET TWEET";
+        String expected = "whoosh";
         //When
         String actual = cropDuster.makeNoise();
         //Then
@@ -23,7 +24,7 @@ public class CropDusterTest {
     public void addRider(){
         //Given
         CropDuster cropDuster = new CropDuster();
-        Rider rider = new Rider();
+        Pilot rider = new Pilot();
         Boolean expected = true;
         //When
         cropDuster.addRider(rider);
@@ -37,7 +38,7 @@ public class CropDusterTest {
     public void removeRider(){
         //Given
         CropDuster cropDuster = new CropDuster();
-        Rider rider = new Rider();
+        Pilot rider = new Pilot();
         Boolean expected = false;
         //When
         cropDuster.removeRider(rider);
@@ -50,10 +51,10 @@ public class CropDusterTest {
     public void hasRiderCheck(){
         //Given
         CropDuster cropDuster = new CropDuster();
-        Rider rider = new Rider();
+        Pilot pilot = new Pilot();
         Boolean expected = true;
         //When
-        cropDuster.addRider();
+        cropDuster.addRider(pilot);
         Boolean actual = cropDuster.hasRider();
         //Then
         Assert.assertEquals(expected, actual);

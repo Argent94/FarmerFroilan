@@ -1,4 +1,5 @@
 package com.zipcodewilmington.froilansfarm.Field;
+import com.zipcodewilmington.froilansfarm.Edible.Corn;
 import com.zipcodewilmington.froilansfarm.Edible.Edible;
 import org.junit.Test;
 
@@ -15,9 +16,9 @@ public class CropClassTest {
         //given
         int expected=4;
         Crop cropClass = new Crop();
-        Edible apple=new Edible();
+        Corn corn = new Corn();
         //then
-        cropClass.yield(apple);
+        cropClass.yield(corn);
         cropClass.setYield(4);
        int actual=cropClass.getYield();
        //then

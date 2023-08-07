@@ -12,10 +12,10 @@ public abstract class Animal<Edible> implements Eater, NoiseMaker {
     public void eat(String edible, Integer i) {
     }
 
-    public String makeNoise(){
+    public String makeNoise() {
         return "sound";
 
-
+    }
 
 
 }
