@@ -47,7 +47,23 @@ public class CornStalkClassTest {
 
     }
 
+    @Test
+    public void yieldTest(){
+        //Given
+        CornStalk corn=new CornStalk();
 
+        boolean expected=true;
+        //When
+        boolean actualbool=false;
+        int actual =corn.yield();
+        if(actual<=6||actual>=1){
+            actualbool=true;
+        }
+
+
+        //Then
+        Assert.assertEquals(expected,actualbool);
+    }
 
 
 }

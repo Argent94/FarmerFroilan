@@ -3,8 +3,11 @@ package com.zipcodewilmington.froilansfarm.Field;
 import com.zipcodewilmington.froilansfarm.Edible.Edible;
 
 public class Crop {
-    private Integer yield;
-    private Boolean readyToHarvest;
+
+    private int yield;
+
+
+    private boolean readyToHarvest=false;
 
     public Crop() {
         this.yield = null;
@@ -12,29 +15,22 @@ public class Crop {
 
     }
 
-    public void yield(Edible edible) {
 
-    }
-
-    public int getYield() {
-        return this.yield;
-    }
-
-    public void setYield(int yield) {
-        this.yield = yield;
-    }
-
-    public boolean hasYieldCheck() {
-        return false;
-    }
-
-    public void fertalizeCrop() {
-
-    }
-
-    public boolean beenFertalizedCheck() {
-        return false;
-    }
+public int getYield() {
+        return yield;
+}
+public void setYield(int yield){
+        this.yield=yield;
+}
+public boolean hasYieldCheck(){
+    return yield > 0;
+}
+public void fertalizeCrop(){
+readyToHarvest=true;
+}
+public boolean beenFertalizedCheck(){
+        return readyToHarvest;
+}
 
 
 }

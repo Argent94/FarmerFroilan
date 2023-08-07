@@ -16,8 +16,10 @@ public class TomatoPlantClassTest {
         TomatoPlant tomato = new TomatoPlant();
         boolean expected = true;
         //When
-        tomato.setYield(2);
-        boolean actual = tomato.hasYieldCheck();
+
+        tomato.setYield(6);
+        boolean actual=tomato.hasYieldCheck();
+
         //Then
         Assert.assertEquals(expected,actual);
 
@@ -42,10 +44,30 @@ public class TomatoPlantClassTest {
         int expected = 6;
         //When
         tomato.setYield(6);
-        int actual = tomato.getYield();
+
+        int actual=tomato.getYield();
+
         //Then
         Assert.assertEquals(expected,actual);
 
+    }
+
+    @Test
+    public void yieldTest(){
+        //Given
+        TomatoPlant tomato=new TomatoPlant();
+
+        boolean expected=true;
+        //When
+        boolean actualbool=false;
+        int actual =tomato.yield();
+        if(actual<=6||actual>=1){
+            actualbool=true;
+        }
+
+
+        //Then
+        Assert.assertEquals(expected,actualbool);
     }
 
 }

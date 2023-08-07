@@ -1,18 +1,26 @@
 package com.zipcodewilmington.froilansfarm.Field;
 
-import com.zipcodewilmington.froilansfarm.Edible.Corn;
-import com.zipcodewilmington.froilansfarm.Edible.Tomato;
+
+import com.zipcodewilmington.froilansfarm.Edible.Edible;
+
+import java.util.Random;
+
+
 
 public class CornStalk {
+    public CornStalk() {
+        super();
+    }
 
     private int yield;
 
-    public void CornStalk() {
 
-    }
+    public int yield() {
+        Random randomNum = new Random();
+        int randomYield;
+        randomYield = randomNum.nextInt(6);
 
-    public Corn yield() {
-        return null;
+        return randomYield;
     }
 
     public boolean hasYieldCheck() {
@@ -23,10 +31,12 @@ public class CornStalk {
         return yield;
     }
 
+
     public void setYield(int yield) {
+
 
 
         this.yield = yield;
     }
-
 }
+
