@@ -1,6 +1,9 @@
 package com.zipcodewilmington.froilansfarm.Edible;
+
 import org.junit.Test;
+
 import static org.junit.Assert.*;
+
 public class CornClassTest {
     public void testEatenPropertyInitializedFalse() {
         Corn corn = new Corn();

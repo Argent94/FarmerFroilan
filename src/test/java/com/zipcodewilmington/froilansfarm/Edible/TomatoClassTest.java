@@ -1,7 +1,11 @@
 package com.zipcodewilmington.froilansfarm.Edible;
+
 import static org.junit.jupiter.api.Assertions.*;
+
 import org.junit.Test;
+
 import static org.junit.Assert.*;
+
 public class TomatoClassTest {
     @Test
     public void testEatenPropertyInitializedFalse() {

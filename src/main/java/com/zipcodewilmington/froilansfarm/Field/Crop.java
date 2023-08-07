@@ -3,17 +3,19 @@ package com.zipcodewilmington.froilansfarm.Field;
 import com.zipcodewilmington.froilansfarm.Edible.Edible;
 
 public class Crop {
+
     private int yield;
 
 
     private boolean readyToHarvest=false;
 
-    public void Crop(){
+    public Crop() {
+        this.yield = null;
+        this.readyToHarvest = null;
 
     }
-public void yield(Edible edible){
 
-}
+
 public int getYield() {
         return yield;
 }

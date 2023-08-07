@@ -14,6 +14,7 @@ public class CornStalk {
 
     private int yield;
 
+
     public int yield() {
         Random randomNum = new Random();
         int randomYield;
@@ -30,7 +31,9 @@ public class CornStalk {
         return yield;
     }
 
+
     public void setYield(int yield) {
+
 
 
         this.yield = yield;

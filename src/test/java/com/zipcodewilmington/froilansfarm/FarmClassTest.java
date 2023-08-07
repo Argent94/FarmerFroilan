@@ -13,8 +13,9 @@ public class FarmClassTest {
         // Given
         FarmHouse farmHouse = new FarmHouse();
         Farm farm = new Farm();
+
         farm.setFarmHouse(farmHouse);
-        FarmHouse expected = farmHouse;
+        FarmHouse expected = farm.getFarmHouse();
         // When
         FarmHouse actual = farm.getFarmHouse();
         // Then
