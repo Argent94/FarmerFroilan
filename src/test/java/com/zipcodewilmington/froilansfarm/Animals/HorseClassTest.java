@@ -10,7 +10,6 @@ import static org.junit.jupiter.api.Assertions.*;
 public class HorseClassTest {
 
 
-<<<<<<< HEAD
 //    @Test
 //    public void testEat() {
 //        //Given
@@ -20,7 +19,6 @@ public class HorseClassTest {
 //        horse.eat("",2);
 //        //Then
 //    }
-=======
     @Test
     public void testEat() {
         //Given
@@ -126,7 +124,7 @@ public class HorseClassTest {
         String expected = "";
 
         //When
-        String noise = horse.makeNise();
+        String noise = horse.makeNoise();
         boolean actual = noise.equals(expected);
         //Then
         Assert.assertFalse(expected,actual);
@@ -139,7 +137,7 @@ public class HorseClassTest {
         String expected = "";
 
         //When
-        String noise = horse.makeNise();
+        String noise = horse.makeNoise();
         boolean actual = noise.equals(expected);
         //Then
         Assert.assertFalse(expected,actual);

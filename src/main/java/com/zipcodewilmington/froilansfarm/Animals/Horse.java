@@ -26,7 +26,7 @@ public class Horse<Corn> extends Animal implements Rideable {
         this.beenRidden = beenRidden;
     }
 
-    public boolean getRidden() {
+    public boolean getBeenRidden() {
         return beenRidden;
     }
 
