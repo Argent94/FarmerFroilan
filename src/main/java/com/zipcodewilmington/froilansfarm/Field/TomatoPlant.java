@@ -4,6 +4,7 @@ import java.util.Random;
 
 public class TomatoPlant {
     private int yield;
+
 public TomatoPlant() {
 
 }
@@ -15,14 +16,17 @@ public int yield() {
     return randomYield;
 }
     public boolean hasYieldCheck(){
+
         return yield > 0;
     }
-    public int getYield (){
+
+    public int getYield() {
         return yield;
     }
-    public void setYield(int yield){
 
-        this.yield=yield;
+    public void setYield(int yield) {
+
+        this.yield = yield;
     }
 
 

@@ -79,7 +79,7 @@ public class CropClassTest {
         cropClass.setYield(5);
         int actual = cropClass.getYield();
         //then
-        assertEquals(actual,expected);
+        assertEquals(expected,actual);
 
     }
 

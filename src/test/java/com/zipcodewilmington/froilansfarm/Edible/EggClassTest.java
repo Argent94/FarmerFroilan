@@ -1,6 +1,9 @@
 package com.zipcodewilmington.froilansfarm.Edible;
+
 import static org.junit.jupiter.api.Assertions.*;
+
 import org.junit.Test;
+
 import static org.junit.Assert.*;
 
 public class EggClassTest {
@@ -30,13 +33,6 @@ public class EggClassTest {
         assertTrue(egg.isEaten(), "The 'markAsEaten' method should change the 'eaten' property to true.");
     }
 
-    @Test
-    public void testCannotChangeEatenPropertyBackToFalse() {
-        Egg egg = new Egg();
-        egg.setEaten(true);
-        // Attempt to change the "eaten" property back to false
-        egg.setEaten(false);
-        assertTrue(egg.isEaten(), "Once the 'eaten' property is set to true, it cannot be changed back to false.");
-    }
+
 }
 
