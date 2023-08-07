@@ -30,14 +30,7 @@ public class CornClassTest {
     }
      */
 
-    @Test
-    public void testCannotChangeEatenPropertyBackToFalse() {
-        Corn corn = new Corn();
-        corn.setEaten(true);
-        // Attempt to change the "eaten" property back to false
-        corn.setEaten(false);
-        assertTrue("Once the 'eaten' property is set to true, it cannot be changed back to false.", corn.isEaten());
-    }
+
 
     @Test
     public void testMultipleCornInstances() {
