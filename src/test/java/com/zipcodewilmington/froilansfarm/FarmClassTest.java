@@ -1,4 +1,5 @@
 package com.zipcodewilmington.froilansfarm;
+import com.zipcodewilmington.froilansfarm.Farm;
 import com.zipcodewilmington.froilansfarm.Persons.Person;
 import com.zipcodewilmington.froilansfarm.Shelter.FarmHouse;
 import org.junit.Assert;

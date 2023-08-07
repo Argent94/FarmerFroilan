@@ -15,7 +15,8 @@ public class CornStalkClassTest {
         CornStalk cornStalk=new CornStalk();
         boolean expected=true;
         //When
-        boolean actual=cornStalk.hasYieldCheck(20);
+        cornStalk.setYield(6);
+        boolean actual=cornStalk.hasYieldCheck();
         //Then
         Assert.assertEquals(expected,actual);
 
@@ -39,6 +40,7 @@ public class CornStalkClassTest {
         CornStalk cornStalk=new CornStalk();
         int expected=6;
         //When
+        cornStalk.setYield(6);
         int actual=cornStalk.getYield();
         //Then
         Assert.assertEquals(expected,actual);
