@@ -20,6 +20,7 @@ public class Stable extends Shelter<Horse> {
         horses.add(horse);
     }
 
+
     public Horse getAnimal(Horse horse) {
         for (int i = 0; i < horses.size(); i++) {
             if (horses.get(i).equals(horse)) {
@@ -53,6 +54,7 @@ public class Stable extends Shelter<Horse> {
     public void checkOutHorse() {
 
         ridingHorse = horses.get(0);
+        horses.remove(0);
 
     }
 
