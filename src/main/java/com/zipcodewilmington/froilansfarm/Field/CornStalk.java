@@ -7,27 +7,33 @@ import java.util.Random;
 
 
 
-public class CornStalk  {
-    public CornStalk(){
+public class CornStalk {
+    public CornStalk() {
         super();
     }
+
     private int yield;
+
     public int yield() {
-        Random randomNum= new Random();
+        Random randomNum = new Random();
         int randomYield;
-       randomYield= randomNum.nextInt(6);
+        randomYield = randomNum.nextInt(6);
 
         return randomYield;
     }
-    public boolean hasYieldCheck(){
+
+    public boolean hasYieldCheck() {
         return yield > 0;
     }
-    public int getYield (){
+
+    public int getYield() {
         return yield;
     }
-    public void setYield(int yield){
+
+    public void setYield(int yield) {
 
 
-        this.yield=yield;
+        this.yield = yield;
     }
+}
 
