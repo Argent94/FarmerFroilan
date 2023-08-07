@@ -1,11 +1,14 @@
 package com.zipcodewilmington.froilansfarm.Vehicles;
 
-public abstract class AirCraft<Pilot> extends Vehicle{
+import com.zipcodewilmington.froilansfarm.Rider;
+
+public abstract class AirCraft<Pilot extends Rider> extends Vehicle<Pilot>{
 
     Pilot rider;
 
+    @Override
     public void addRider(Pilot pilot) {
-        rider = pilot;
+
     }
 
     public String makeNoise() {
