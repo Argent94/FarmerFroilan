@@ -44,10 +44,11 @@ public class Farm<EdibleType extends Edible, PersonType extends Person>{
     }
 
 
-    public void setFarmHouse(FarmHouse farmHouse) {
-    }
     public FarmHouse getFarmHouse(){
         return house;
+    }
+
+    public void setFarmHouse(FarmHouse farmHouse){
     }
 
     public HashMap<String, List<EdibleType>> getStock(){
