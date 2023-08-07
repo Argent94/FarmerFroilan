@@ -28,7 +28,7 @@ public class CropDusterTest {
         Boolean expected = true;
         //When
         cropDuster.addRider(rider);
-        Boolean actual = cropDuster.addRider(rider);
+        Boolean actual = cropDuster.hasRider(rider);
         //Then
         Assert.assertEquals(expected, actual);
 
