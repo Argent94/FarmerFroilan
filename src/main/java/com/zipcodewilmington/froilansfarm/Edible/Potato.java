@@ -1,6 +1,6 @@
 package com.zipcodewilmington.froilansfarm.Edible;
 
-public class Potato {
+public class Potato extends Edible{
 
     private Boolean eaten;
 

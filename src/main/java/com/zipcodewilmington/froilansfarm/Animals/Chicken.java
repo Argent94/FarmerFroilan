@@ -50,7 +50,7 @@ public class Chicken <Corn> extends Animal implements Produce<Egg> {
         return false;
     }
 
-    public void eat(String food, Integer num){
+    public void eat(String food, Integer num) {
         foodEaten.put(food, foodEaten.get(food) + num);
     }
 

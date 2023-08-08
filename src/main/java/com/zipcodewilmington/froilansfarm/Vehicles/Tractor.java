@@ -10,13 +10,6 @@ public class Tractor<Farmer> extends Vehicle implements FarmVehicle {
     Farmer rider;
     Boolean hasRider = false;
 
-//    + Tractor()
-//+ harvest()
-//+ makeNoise():String
-//+ addRider(Farmer)
-//+ removeRider()
-//+ hasRiderCheck() : boolean
-
     public Tractor() {
     }
 
