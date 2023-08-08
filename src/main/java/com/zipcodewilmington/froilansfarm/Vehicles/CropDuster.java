@@ -1,6 +1,6 @@
 package com.zipcodewilmington.froilansfarm.Vehicles;
 
-import com.zipcodewilmington.froilansfarm.Rider;
+import com.zipcodewilmington.froilansfarm.Persons.Rider;
 
 public class CropDuster<Pilot> extends AirCraft{
 
