@@ -78,15 +78,28 @@ public class Farm<EdibleType extends Edible, PersonType extends Person>{
 
         stock.put(food, tempList);
     }
-
+/*
     public void rideHorses(){
-        ArrayList tempList = new ArrayList<Horse>();
+        ArrayList tempList;
+        Stable stable;
         for (int i = 0; i < stables.size(); i++){
-            tempList = stables.get(i).getHorseList();
+            stable = stables.get(i);
+            tempList = stable.getHorseList();
             for (int j = 0; j < tempList.size(); j++){
+                Horse horse = (Horse) tempList.get(i);
+                horse.setBeenRidden(true);
 
             }
+            stables.get(i)
         }
+    }
+
+ */
+
+
+
+    public Boolean allHorsesRidden(){
+        return false;
     }
 
 
