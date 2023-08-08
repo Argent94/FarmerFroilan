@@ -7,7 +7,7 @@ import java.util.Random;
 
 
 
-public class CornStalk {
+public class CornStalk extends Crop{
     public CornStalk() {
         super();
     }

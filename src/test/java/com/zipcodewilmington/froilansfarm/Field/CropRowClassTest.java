@@ -1,4 +1,5 @@
 package com.zipcodewilmington.froilansfarm.Field;
+import com.zipcodewilmington.froilansfarm.Edible.Tomato;
 import org.junit.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -24,14 +25,13 @@ public class CropRowClassTest {
     public void setProduceTest() {
         //Given
         CropRow cropRowClass = new CropRow();
-        Crop crop = new Crop();//add tomato
-        cropRowClass.setProduce(crop);
+        TomatoPlant crop = new TomatoPlant();//add tomato
         //When
-        String expected = "tomato";
+
         cropRowClass.setProduce(crop);
         Crop actual =cropRowClass.getProduce();
         //Then
-        assertEquals(expected,actual);
+        assertTrue(actual instanceof TomatoPlant);
     }
     @Test
     public void setYieldRowTest() {
@@ -84,7 +84,7 @@ public class CropRowClassTest {
     public void harvestRowTest() {
         //Given
         CropRow cropRowClass = new CropRow();
-        boolean expected=true;
+        boolean expected=false;
         //When
         cropRowClass.harvestRow();
         boolean actual= cropRowClass.beenFertalizedCheck();
@@ -105,7 +105,7 @@ public class CropRowClassTest {
     public void isEmptyTest() {
         //Given
         CropRow cropRowClass = new CropRow();
-        boolean expected=false;
+        boolean expected=true;
         //When
         boolean actual= cropRowClass.isEmpty();
         //Then

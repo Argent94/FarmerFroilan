@@ -2,7 +2,7 @@ package com.zipcodewilmington.froilansfarm.Field;
 
 import java.util.Random;
 
-public class TomatoPlant {
+public class TomatoPlant extends Crop{
     private int yield;
 
 public TomatoPlant() {
