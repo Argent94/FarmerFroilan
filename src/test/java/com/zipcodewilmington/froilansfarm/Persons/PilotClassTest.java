@@ -200,6 +200,25 @@ public class PilotClassTest {
     }
 
     @Test
+    public void emptyBellyTest(){
+        // Given
+        Pilot pilot = new Pilot();
+        Map<String, Integer> expected = new HashMap<String, Integer>();
+        expected.put("corn", 0);
+        expected.put("tomato", 0);
+        expected.put("egg", 0);
+
+        // When
+        pilot.eat("corn", 3);
+        pilot.eat("tomato", 4);
+        pilot.emptyBelly();
+        Map<String, Integer> actual = pilot.getFoodEaten();
+
+        // Then
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
     public void personIsInstanceOfAnimalTest(){
         // Given
         Pilot pilot = new Pilot();

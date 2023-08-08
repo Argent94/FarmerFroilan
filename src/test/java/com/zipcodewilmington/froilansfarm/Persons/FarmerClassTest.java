@@ -202,6 +202,24 @@ public class FarmerClassTest {
     }
 
 
+    @Test
+    public void emptyBellyTest(){
+        // Given
+        Farmer farmer = new Farmer();
+        Map<String, Integer> expected = new HashMap<String, Integer>();
+        expected.put("corn", 0);
+        expected.put("tomato", 0);
+        expected.put("egg", 0);
+
+        // When
+        farmer.eat("corn", 3);
+        farmer.eat("tomato", 4);
+        farmer.emptyBelly();
+        Map<String, Integer> actual = farmer.getFoodEaten();
+
+        // Then
+        Assert.assertEquals(expected, actual);
+    }
 
     @Test
     public void farmerIsInstanceOfPersonTest(){
