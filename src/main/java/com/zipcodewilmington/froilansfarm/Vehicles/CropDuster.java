@@ -8,11 +8,6 @@ public class CropDuster<Pilot> extends AirCraft{
     Boolean fertilize = null;
 
     Boolean hasRider = false;
-//+ makeNoise(): String
-//+ addRider(Pilot)
-//+ removeRider()
-//+ hasRiderCheck() : boolean
-//+ fertilize()
 
     public CropDuster() {
         super();
