@@ -18,7 +18,8 @@ public class CropDuster<Pilot> extends AirCraft{
         super();
     }
 
-    public void setRider () {
+    public void setRider(Pilot rider) {
+        this.rider = rider;
         hasRider = true;
     }
     public boolean hasRiderCheck () {
@@ -47,7 +48,7 @@ public class CropDuster<Pilot> extends AirCraft{
 
     @Override
     public void addRider(Object pilot) {
-        rider = (Pilot) pilot;
+        this.setRider((Pilot) pilot);
     }
 
 
